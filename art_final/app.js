@@ -8,19 +8,6 @@ function later() {
     start();
 }
 
-document.addEventListener('keydown', play_audio);
-var playing = false;
-function play_audio() {
-    var audio = document.getElementById("audio");
-    audio.play();
-
-    if (playing == true) {
-        alert("sadly the world will not mute for you");
-    }
-
-    playing = true;
-}
-
 function option(picked) {
     document.getElementById("pop-up").style.display = "block";
     var text = "NULL";
