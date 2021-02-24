@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Art 140: Final Project</title>
+        <meta name="description" content="Art 140: Final Project" />
+        <meta name="author" content="MacRichards" />
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js"></script>
+
+        <style>
+            .left {
+                background-image: url("https://abaforlawstudents.com/wp-content/uploads/2019/11/study-group.jpg");
+            }
+
+            .right {
+                background-image: url("https://www.thelawyerportal.com/wp-content/uploads/first-class-law-essay.jpg");
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="queshtion">
+            <h1>Go to study group or write that essay?</h1>
+        </div>
+        <div class="options">
+            <div class="left" onclick="option(14)"></div>
+            <div class="right" onclick="option(12)"></div>
+        </div>
+        <div class="ann" id="pop-up">
+            <p id="pop-up-text">NULL</p>
+            <iframe width="1280" height="720" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="pop-up-vid"></iframe>
+            <button type="button" onclick="" id="pop-up-button">continue</button>
+        </div>
+    </body>
+</html>
