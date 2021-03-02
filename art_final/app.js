@@ -15,55 +15,55 @@ function option(picked) {
     var vid = "NULL";
     switch (picked) {
         case 1: //Wake up
-            text = "You are on time to class but you are really tired and don\'t remember a lot.";
-            but = "2";
+            text = "You are on time to class but you are really tired and don\'t remember a lot. Time to crush a red bull to get back my energy.";
+            but = "why_am_i_so_tired";
             break;
         case 2: //Sleep in
-            text = "You are late to class. This means you might not be ready for the final.";
-            but = "2";
+            text = "You are late to class... again. Your professor cheerfully reminds you that if you continue to be late to class it is very likely you will not pass the class.";
+            but = "why_am_i_so_tired";
             break;
         case 3: //Do homework
             text = "Your friends think you are avoiding them. You are always locked away in your dorm room working away. Choosing to study rather then going to that frat part where all your friends are going to. You think this this the responsible thing to do, sit and work... but is it? Or am I throwing my life away chasing some stupid degree rather then enoying this limited time I have with my friends before we go our seperate ways.";
-            but = "3_1";
+            but = "isnt_homework_important";
             break;
         case 4: //Hangout with friends
-            text = "You are falling behind in your homework.";
-            but = "3_2";
+            text = "You decided that hangout with your friends is more important then your school work. That was a mistake. You are now falling behind in your homework. So far behind in fact you do not know if you will be able to pass.";
+            but = "can_i_ever_get_a_break";
             break;
         case 5: //Hangout with friends pt. 2
-            text = "You are hungry but you convince yourself it is worth it so you can hangout with your friends.";
-            but = "4_2";
+            text = "You skipped lunch again... There never seems to be time to eat theses days with all the obligations that you have. Going to class, seeing friends, doing your homework, going to work, and somehow you still you need to get your 8 hours of sleep.";
+            but = "there_is_never_enough_time";
             vid = "https://www.youtube.com/embed/W6T9GA4lyBg";
             break;
         case 6: //Eat lunch
             text = "You are fed but your mind is racing. Your mind is flooded with thoughts. Am I good enough? Will I be able to make a difference? What will the future hold? Am I on the right track? Do my friends even like me?";
-            but = "4_1";
+            but = "food_is_good_but_maybe_i_should_stop_eating";
             break;
         case 7: //Do homework pt 2
             text = "You are hungry but you convince yourself you need to get your homework done. You already spent all morning with your freinds and are despertly falling behind. How long before I should just drop out? Can I keep going like this?";
-            but = "4_2";
+            but = "there_is_never_enough_time";
             vid = "https://www.youtube.com/embed/W6T9GA4lyBg";
             break;
         case 8: //Go on a walk
             text = "You pass out on the walk and wake up four hourns later.";
-            but = "5_1";
+            but = "wait_what_happened";
             break;
         case 9: //Take a nap
             text = "You wake up four hours later.";
-            but = "5_1";
+            but = "wait_what_happened";
             break;
         case 10: //Push on
             text = "You start making a lot of mistakes... You become fusterated and fall out of your seat in rage. Tears begin to appear in your eyes from the insecurites and fusterations that the world has put onto you.";
-            but = "5_2";
+            but = "i_am_so_tired";
             vid = "https://www.youtube.com/embed/mRqR4mOC4gc";
             break;
         case 11: //Return call from mom
             text = "You talked for an hour.";
-            but = "6_1";
+            but = "i_miss_my_family";
             break;
         case 12: //Write an essay
             text = "You have failed... agin. Freaking out you loose sight of what is going on. You don't know what is happening. You have put so much work in you think and it still is not enough.";
-            but = "6_2";
+            but = "why_can_i_never_get_a_good_score";
             vid = "https://www.youtube.com/embed/fuB-TzXL05g";
             break;
         case 13: //Give up
@@ -72,7 +72,7 @@ function option(picked) {
             break;
         case 14: //Go to study group
             text = "You are bullied. Picked apart. Told you are nothing.";
-            but = "7";
+            but = "why_does_no_one_like_me";
             vid = "https://www.youtube.com/embed/8g_kA2soWOo";
             break;
         case 15: //Keep pushing forward
