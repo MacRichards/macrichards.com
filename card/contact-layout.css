@@ -23,15 +23,19 @@ h1 {
 }
 
 .socail-links {
-    background-color: #BBA14f;
-    color: #151515;
     width: 100%;
     height: fit-content;
     text-align: center;
 }
 
-.socail-links ul li {
+.socail-links li {
     display: inline;
+}
+
+.socail-links i {
+    background-color: #f9f9f3;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .move {
@@ -39,7 +43,7 @@ h1 {
 }
 
 .socail-links a {
-    color: #151515;
+    color: #BBA14f;
 }
 
 .contact {
@@ -57,4 +61,27 @@ h1 {
 
 .move-button {
     height: 50px;
+}
+
+.contact-links ul{
+    background-color: #f9f9f3;
+    padding: 5px;
+    border-radius: 10px;
+    color: #151515;
+}
+
+.contact-links li {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+}
+
+.gold {
+    color: #BBA14f;
+}
+
+.border-bottom {
+    border-bottom: solid 1px #151515;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
 }

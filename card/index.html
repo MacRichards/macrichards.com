@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="../css/media-queries.css" />
         <link rel="stylesheet" href="../css/magnific-popup.css" />
 
-        <link rel="stylesheet" href="contact-layout.css">
+        <link rel="stylesheet" href="contact-layout.css" />
 
         <!-- Script -->
         <script src="../js/modernizr.js"></script>
@@ -35,29 +35,29 @@
 
     <body>
         <div class="intro">
-            <image src="../images/profilepic.jpeg" class="intro-pic"/>
+            <image src="../images/profilepic.jpeg" class="intro-pic" />
             <h1>Michael (Mac) Richards</h1>
         </div>
         <div class="socail-links">
-            <ul class="social">
+            <ul>
                 <li>
                     <a href="https://twitter.com/MacRichards11" target="_blank">
-                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-twitter fa-2x"></i>
                     </a>
                 </li>
                 <li class="move">
                     <a href="https://www.linkedin.com/in/michael-r-6a0936160/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-linkedin fa-2x"></i>
                     </a>
                 </li>
                 <li class="move">
                     <a href="https://github.com/MacRichards" target="_blank">
-                        <i class="fa fa-github"></i>
+                        <i class="fa fa-github fa-2x"></i>
                     </a>
                 </li>
                 <li class="move">
                     <a href="https://www.instagram.com/macrichards/" target="_blank">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-instagram fa-2x"></i>
                     </a>
                 </li>
             </ul>
@@ -70,10 +70,27 @@
                     </a>
                 </p>
             </div>
-            <p><i class="fa fa-phone-square" aria-hidden="true"></i> Phone: <a href="Tel:+13605100009">(360) 510-0009</a></p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: <a href="Mailto:MacMRichards@gmail.com">MacMRichards@gmail.com</a></p>
-            <p><i class="fa fa-user" aria-hidden="true"></i> Website: <a href="../index.html">MacRichards.com</a></p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location: <a href="https://goo.gl/maps/oKNXkDhFK158VSug6">Lynden, WA</a></p>
+            <div class="contact-links">
+                <ul onclick="window.open('Tel:+13605100009', '_self')">
+                    <li>iPhone</li>
+                    <li class="gold">(360) 510-0009</li>
+                </ul>
+                <ul>
+                    <span onclick="window.open('Mailto:MacMRichards@gmail.com', '_self')">
+                        <li>Personal</li>
+                        <li class="border-bottom gold">MacMRichards@gmail.com</li>
+                    </span>
+                    <span onclick="window.open('Mailto:Contact@MacRichards.com', '_self')">
+                        <li>Work</li>
+                        <li class="gold">Contact@MacRichards.com</li>
+                    </span>
+                </ul>
+                <ul onclick="window.open('../index.html', '_blank')">
+                    <li>Website</li>
+                    <li class="gold">MacRichards.com</li>
+                </ul>
+                
+            </div>
         </div>
     </body>
 </html>
