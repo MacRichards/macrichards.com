@@ -49,6 +49,10 @@ h1 {
     color: #BBA14f;
 }
 
+.social-links i:hover, .social-links i:active {
+    background-color: lightgray;
+}
+
 .contact {
     margin-left: 15px;
     margin-right: 15px;
@@ -78,6 +82,10 @@ h1 {
     padding: 0;
     margin: 0;
     line-height: normal;
+}
+
+.contact-links div:hover, .contact-links div:active {
+    background-color: lightgray;
 }
 
 .contact-icon {
