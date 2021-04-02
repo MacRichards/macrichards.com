@@ -66,25 +66,48 @@ h1 {
     height: 50px;
 }
 
-.contact-links ul{
+.contact-links div {
     background-color: #f9f9f3;
-    padding: 5px;
     border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-links div p {
+    color: #151515;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+}
+
+.contact-icon {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: -50px;
+    float: right;
+    right: -10px;
+}
+
+.contact-icon i {
+    padding: 15px;
     color: #151515;
 }
 
-.contact-links li {
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: 6px;
+.fix1 {
+    top: -65px;
+}
+
+.fix2 {
+    right: -70px;
 }
 
 .gold {
-    color: #BBA14f;
+    color: #BBA14f !important;
 }
 
 .border-bottom {
     border-bottom: solid 1px #151515;
-    padding-bottom: 6px;
-    margin-bottom: 6px;
+    padding-bottom: 6px !important;
+    margin-bottom: 6px !important;
 }
