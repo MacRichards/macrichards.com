@@ -113,3 +113,49 @@ h1 {
     padding-bottom: 6px !important;
     margin-bottom: 6px !important;
 }
+
+.no-desk {
+    display: hidden;
+}
+
+.no-desk-message {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .no-desk {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 15, 15, 0.95);
+    }
+
+    .no-desk-message {
+        display: block;
+        margin: 0;
+        position: absolute;
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .no-desk-icon {
+        position: relative;
+    }
+
+    .proceed a {
+        color: #838C95;
+        border-bottom: solid 1px #838C95;
+    }
+
+    .proceed a:hover {
+        cursor: pointer;
+        color: #5f666d;
+        border-bottom: solid 1px #5f666d;
+    }
+}

@@ -94,8 +94,27 @@
                     <p class="gold">MacRichards.com</p>
                     <span class="contact-icon"><i class="fas fa-globe fa-2x"></i></span>
                 </div>
-                
+            </div>
+        </div>
+        <div class="no-desk" id="no-desk">
+            <div class="no-desk-message">
+                <span class="no-desk-icon"><i class="fas fa-exclamation-triangle fa-3x"></i></span>
+                <p>This page is intended for mobile devices only.</p>
+                <div class="download">
+                    <p class="move-button">
+                        <a href="../index.html" target="_blank" class="button">
+                            <i class="fas fa-globe"></i> To Site
+                        </a>
+                    </p>
+                </div>
+                <p class="proceed" onclick="hideNoDesk()"><a>Proceed to page</a></p>
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        function hideNoDesk() {
+            var x = document.getElementById("no-desk");
+            x.style.display = "none";
+        }
+    </script>
 </html>
