@@ -7,9 +7,9 @@ var yyyy = today.getFullYear();
 today = yyyy + '-' + mm + '-' + dd;
 
 function findMonths (startDate, endDate) {
-    var start      = startDate.split('-');
-    var end        = endDate.split('-');
-    var startYear  = parseInt(start[0]);
+    var start = startDate.split('-');
+    var end = endDate.split('-');
+    var startYear = parseInt(start[0]);
     var endYear = parseInt(end[0]);
     var months = 0;
 
@@ -23,4 +23,22 @@ function findMonths (startDate, endDate) {
     return months;
 }
 
-document.getElementById("months1").innerHTML = "(" + findMonths(startDate, today) + " months)";
+function formatMonths(startDate, endDate) {
+    var years = 0;
+    var months = 0;
+    numberOfMonths = findMonths(startDate, endDate);
+    if (numberOfMonths >= 12) {
+        years = Math.floor(numberOfMonths / 12);
+        months = numberOfMonths - (years * 12);
+        if (months > 1) {
+            return (years + " yrs " + months + " mos");
+        } else if (months == 1) {
+            return (years + " yrs " + months + " mo");
+        } else return (years + " yrs");
+    } else if (numberOfMonths == 1) {
+        return (numberOfMonths + "mo")
+    } else return (numberOfMonths + "mos");
+}
+
+document.getElementById("months1").innerHTML = "(" + formatMonths('2021-10-01', today) + ")";
+document.getElementById("months2").innerHTML = "(" + formatMonths('2019-01-01', today) + ")";
