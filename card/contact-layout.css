@@ -27,13 +27,18 @@ h1 {
 }
 
 .social-links {
-    width: 100%;
     height: fit-content;
     text-align: center;
+    margin: 0 15px 24px 15px !important;
+}
+
+.social-links ul {
+    margin: 0 !important;
 }
 
 .social-links li {
     display: inline;
+    margin: 0 5% 0 5% !important;
 }
 
 .social-links i {
