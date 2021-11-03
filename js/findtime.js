@@ -1,5 +1,3 @@
-var startDate = '2020-07-01';
-
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -36,8 +34,8 @@ function formatMonths(startDate, endDate) {
             return (years + " yrs " + months + " mo");
         } else return (years + " yrs");
     } else if (numberOfMonths == 1) {
-        return (numberOfMonths + "mo")
-    } else return (numberOfMonths + "mos");
+        return (numberOfMonths + " mo")
+    } else return (numberOfMonths + " mos");
 }
 
 document.getElementById("months1").innerHTML = "(" + formatMonths('2021-10-01', today) + ")";
