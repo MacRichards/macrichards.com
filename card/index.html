@@ -1,115 +1,158 @@
 <!DOCTYPE html>
-<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!-->
-<html class="no-js" lang="en">
-    <!--<![endif]-->
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Michael Richards - Contact Card</title>
-        <meta
-            name="description"
-            content="The personal website for Mr. Mac Richards."
-        />
-        <meta name="author" content="MacRichards" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="../css/default.css" />
-        <link rel="stylesheet" href="../css/layout.css" />
-        <link rel="stylesheet" href="../css/media-queries.css" />
-        <link rel="stylesheet" href="../css/magnific-popup.css" />
-        <link rel="stylesheet" href="contact-layout.css" />
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Script -->
-        <script src="../js/modernizr.js"></script>
-        <script src="https://kit.fontawesome.com/9c6ad30628.js" crossorigin="anonymous"></script>
+    <title>Michael Richards - Contact Card</title>
+    <meta name="author" content="MacRichards" />
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-        <!-- Favicons -->
-        <link rel="shortcut icon" href="../favicon.jpg" />
-    </head>
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.jpg" rel="icon">
 
-    <body>
-        <div class="intro">
-            <image src="../images/profilepic.jpeg" class="intro-pic" />
-            <image src="../favicon.jpg" class="intro-pic" />
-        </div>
-        <h1>Mac Richards</h1>
-        <div class="social-links">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/michael-r-6a0936160/" target="_blank">
-                        <i class="fa fa-linkedin fa-2x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/MacRichards" target="_blank">
-                        <i class="fa fa-github fa-2x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/macrichards/" target="_blank">
-                        <i class="fa fa-instagram fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="contact">
-            <div class="download">
-                <p class="move-button">
-                    <a href="electronic business card.vcf" target="_blank" class="button">
-                        <i class="far fa-address-card"></i> Download VCF
-                    </a>
-                </p>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c6ad30628.js" crossorigin="anonymous"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <link href="card-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-center">
+                <div class="blur-background text-center">
+                    <header>
+                        <img src="../assets/img/favicon.jpg" class="profile-pic">
+                        <h1>Michael (Mac) Richards</h1>
+                        <div class="social-links d-flex justify-content-around">
+                            <a href="https://github.com/MacRichards" class="github"><i class="ri-github-fill"></i></a>
+                            <a href="https://www.instagram.com/macrichards/" class="instagram"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="https://discord.gg/zFXEFTH" class="discord"><i class="ri-discord-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/michael-r-6a0936160/" class="linkedin"><i
+                                    class="ri-linkedin-box-fill"></i></a>
+                        </div>
+                    </header>
+                    <div class="item row g-0" onclick="window.open('tel:1-360-510-0009');">
+                        <div class="d-flex justify-content-center align-items-center col-2">
+                            <i class="systemGreen bx ri-phone-fill"></i>
+                        </div>
+                        <div class="left col-10">
+                            <p>iPhone</p>
+                            <h4>+1 (360) 510-0009</h4>
+                        </div>
+                    </div>
+                    <div class="item row g-0">
+                        <div class="sub-item row g-0" onclick="window.open('mailto:macmrichards@gmail.com')">
+                            <div class="d-flex justify-content-center align-items-center col-2">
+                                <i class="systemBlue bx ri-mail-fill"></i>
+                            </div>
+                            <div class="left col-10">
+                                <p>home</p>
+                                <h4>macmrichards@gmail.com</h4>
+                            </div>
+                        </div>
+                        <div class="sub-item row g-0" onclick="window.open('mailto:contact@macrichards.com')">
+                            <div class="d-flex justify-content-center align-items-center col-2">
+                                <i class="systemBlue bx ri-mail-fill"></i>
+                            </div>
+                            <div class="left col-10">
+                                <p>work</p>
+                                <h4>contact@macrichards.com</h4>
+                            </div>
+                        </div>
+                        <div class="sub-item row g-0" onclick="window.open('mailto:michar8@uw.edu')">
+                            <div class="d-flex justify-content-center align-items-center col-2">
+                                <i class="systemBlue bx ri-mail-fill"></i>
+                            </div>
+                            <div class="left col-10">
+                                <p>school</p>
+                                <h4>michar8@uw.edu</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item row g-0">
+                        <div class="row g-0"
+                            onclick="window.open('https://www.google.com/maps/place/Seattle,+WA+98105/@47.6653455,-122.3208684,12z/data=!3m1!4b1!4m5!3m4!1s0x54901483afc82e4f:0x6849e41d46bef642!8m2!3d47.6614244!4d-122.2683743')">
+                            <div class="d-flex justify-content-center align-items-center col-2">
+                                <i class="systemOrange bx ri-map-pin-fill"></i>
+                            </div>
+                            <div class="left col-10">
+                                <p>home</p>
+                                <h4>Seattle, WA 98105 <br> United States</h4>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div class="item row g-0">
+                        <div class="d-flex justify-content-center align-items-center col-2">
+                            <i class="systemRed bx ri-gift-line"></i>
+                        </div>
+                        <div class="left col-10">
+                            <p>birthday</p>
+                            <h4>October 13, 2001</h4>
+                        </div>
+                    </div>
+                    <div class="item row g-0" onclick="window.open('../index.html')">
+                        <div class="d-flex justify-content-center align-items-center col-2">
+                            <i class="systemBlue bx ri-compass-3-line"></i>
+                        </div>
+                        <div class="left col-10">
+                            <p>homepage</p>
+                            <h4>macrichards.com</h4>
+                        </div>
+                    </div>
+                    <div class="download row g-0">
+                        <div class="d-flex justify-content-center align-items-center col-12">
+                            <h4><a href="./electronic business card.vcf">Download CSV</a></h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-links">
-                <div onclick="window.open('Tel:+13605100009', '_self')">
-                    <p>iPhone</p>
-                    <p class="gold">(360) 510-0009</p>
-                    <span class="contact-icon"><i class="fa fa-phone fa-2x"></i></span>
-                </div>
-                <div>
-                    <span onclick="window.open('Mailto:MacMRichards@gmail.com', '_self')">
-                        <p>Personal</p>
-                        <p class="border-bottom gold">MacMRichards@gmail.com</p>
-                        <span class="contact-icon fix1"><i class="fa fa-envelope fa-2x"></i></span>
-                    </span>
-                    <span onclick="window.open('Mailto:Contact@MacRichards.com', '_self')">
-                        <p>Work</p>
-                        <p class="gold">Contact@MacRichards.com</p>
-                        <span class="contact-icon fix2"><i class="fa fa-envelope fa-2x"></i></span>
-                    </span>
-                </div>
-                <div onclick="window.open('../index.html', '_blank')">
-                    <p>Website</p>
-                    <p class="gold">MacRichards.com</p>
-                    <span class="contact-icon"><i class="fas fa-globe fa-2x"></i></span>
+        </div>
+    </div>
+
+    <div id="no-desk" class="blur-background">
+        <div class="no-desk-container container">
+            <div class="row">
+                <i class="systemRed ri-error-warning-fill"></i>
+                <h4>This page is intended for mobile devices only.</h4>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="no-desk-button d-flex justify-content-center align-items-center col-12" onclick="window.open('../index.html')">
+                    <i class="ri-external-link-line"></i>
+                    <p>To Desktop Site</p>
                 </div>
             </div>
-        </div>
-        <div class="no-desk" id="no-desk">
-            <div class="no-desk-message">
-                <span class="no-desk-icon"><i class="fas fa-exclamation-triangle fa-3x"></i></span>
-                <p>This page is intended for mobile devices only.</p>
-                <div class="download">
-                    <p class="move-button">
-                        <a href="../index.html" target="_blank" class="button">
-                            <i class="fas fa-globe"></i> To Site
-                        </a>
-                    </p>
-                </div>
-                <p class="proceed" onclick="hideNoDesk()"><a>Proceed to page</a></p>
+            <div class="row">
+                <p onclick="hideNoDesk()">continue to page</p>
             </div>
         </div>
-    </body>
-    <script type="text/javascript">
-        function hideNoDesk() {
-            var x = document.getElementById("no-desk");
-            x.style.display = "none";
-        }
-    </script>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+
+    <!--Map Code-->
+    <script src="../assets/js/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+        async></script>
+</body>
+
 </html>

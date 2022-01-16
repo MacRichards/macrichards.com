@@ -38,5 +38,10 @@ function formatMonths(startDate, endDate) {
     } else return (numberOfMonths + " mos");
 }
 
+//birthday = new Date(birthday);
+//return new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
+
+document.getElementById("birthday").innerHTML = new Number((new Date().getTime() - new Date("13 October 2001").getTime()) / 31536000000).toFixed(0);
+
 document.getElementById("months1").innerHTML = "(" + formatMonths('2021-10-01', today) + ")";
 document.getElementById("months2").innerHTML = "(" + formatMonths('2019-01-01', today) + ")";
