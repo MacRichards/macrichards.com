@@ -142,6 +142,15 @@
     });
 })();
 
+/* Fades header on scroll */
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $("#header.header-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
+
+/* Blur card on desktop devices */
 function hideNoDesk() {
     document.getElementById("no-desk").style.display = "none";
 }

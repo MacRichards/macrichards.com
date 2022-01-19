@@ -436,6 +436,9 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+.interests {
+    margin-top: 25px;
+}
 .interests .icon-box {
     display: flex;
     align-items: center;
@@ -447,6 +450,7 @@ section .container {
     font-size: 32px;
     padding-right: 10px;
     line-height: 1;
+    background: none;
 }
 .interests .icon-box h3 {
     font-weight: 700;
@@ -506,7 +510,7 @@ section .container {
     margin-bottom: 10px;
 }
 .resume .resume-item h4 i {
-    font-size: 25px;
+    font-size: 13px;
 }
 .resume .resume-item h5 {
     font-size: 16px;
