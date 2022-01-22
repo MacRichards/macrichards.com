@@ -1,14 +1,8 @@
-function initMap() {
-    const myLatLng = { lat: 47.6614, lng: -122.2684 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 9,
-        center: myLatLng,
-        disableDefaultUI: true,
-    });
-
-    new google.maps.Marker({
-        position: myLatLng,
-        map,
-        title: "Hello World!",
-    });
-}
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFjcmljaDUwMCIsImEiOiJja3lwM2gzM3MwNjdjMm5qajk1eDBzeXJmIn0.3jlV57PZfY55TULGIaRDzw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            animate: true,
+            center: [-122.2684, 47.6614],
+            zoom: 10
+        });
