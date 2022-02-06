@@ -3,6 +3,8 @@
 # macrichards.com
 My personal website.
 
+<img src="https://api.thegreenwebfoundation.org/greencheckimage/macrichards.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+
 # License
     Copyright (C) 2021 MacRichards
 
