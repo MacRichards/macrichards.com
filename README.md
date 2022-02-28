@@ -22,4 +22,4 @@ My personal website.
     along with this program.  If not, see https://www.gnu.org/licenses/.
 
 # Credits
-Template for website provided by [Styleshout](https://www.styleshout.com/).
+Template for website provided by [BootstrapMade](https://bootstrapmade.com).
