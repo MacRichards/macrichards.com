@@ -652,7 +652,6 @@ button:focus {
     background-color: #111111;
     padding: 0px 15px;
     height: 50px;
-    line-height: 50px;
     color: #ffffff;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
