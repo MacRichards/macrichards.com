@@ -1,5 +1,6 @@
 body {
-    background-color: #2B2B2B;
+    background-image: url("../images/home-bg.jpg");
+    background-size: cover;
 }
 .container {
     padding: 0;
@@ -67,7 +68,6 @@ h1 {
 }
 .row i.bx {
     font-size: 20px;
-    color: #fff;
 }
 .row p {
     margin: 0;
@@ -77,7 +77,7 @@ h1 {
 .row h4 {
     margin: 0;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
 }
 #map {
     height: 100px;
