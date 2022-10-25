@@ -942,6 +942,7 @@ button:focus {
     .header_title {
         font-size: 40px;
         line-height: 1.2;
+        height: 96px;
     }
     .header_subtitle {
         font-size: 15px;
