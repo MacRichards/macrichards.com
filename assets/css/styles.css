@@ -555,6 +555,13 @@ button:focus {
     font-size: 42px;
 }
 
+.works-id i {
+    border: #000 1px solid;
+    border-radius: 2em;
+    width: fit-content;
+    padding: 0.12em 0.5em;
+}
+
 /*===========================
         EDUCATION
 =============================*/
