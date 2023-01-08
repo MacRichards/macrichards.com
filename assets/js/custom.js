@@ -28,61 +28,43 @@ $("#navbarCollapse").scrollspy({
 });
 var a = 0;
 $(window).on("scroll", function () { }),
-$(window).on("load", function() {
-    var e = $(".work-filter"),
-        t = $("#menu-filter");
-    e.isotope({
-        filter: "*",
-        layoutMode: "masonry",
-        animationOptions: {
-            duration: 750,
-            easing: "linear"
-        }
-    }),
-    t.find("a").on("click", function() {
-        var o = $(this).attr("data-filter");
-        return t.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
-            filter: o,
+    $(window).on("load", function () {
+        var e = $(".work-filter"),
+            t = $("#menu-filter");
+        e.isotope({
+            filter: "*",
+            layoutMode: "masonry",
             animationOptions: {
-                animationDuration: 750,
-                easing: "linear",
-                queue: !1
+                duration: 750,
+                easing: "linear"
             }
-        }), !1
-    })
-}),
-$(window).on("scroll", function() {
-    $(this).scrollTop() > 100 ? $(".back_top").fadeIn() : $(".back_top").fadeOut()
-}),
-$(".back_top").click(function() {
-    return $("html, body").animate({
-        scrollTop: 0
-    }, 1e3), !1
-}),
-$(".element").each(function() {
-    var e = $(this);
-    e.typed({
-        strings: e.attr("data-elements").split(","),
-        typeSpeed: 100,
-        backDelay: 3e3
-    })
-}),
-$("body").bind("cut copy paste", function(e) {
-    e.preventDefault()
-}),
-window.onload = function() {
-    function e(e) {
-        return e.stopPropagation ? e.stopPropagation() : window.event && (window.event.cancelBubble = !0), e.preventDefault(), !1
-    }
-    document.addEventListener("contextmenu", function(e) {
-        e.preventDefault()
-    }, !1),
-    document.addEventListener("keydown", function(t) {
-        t.ctrlKey && t.shiftKey && 73 == t.keyCode && e(t),
-        t.ctrlKey && t.shiftKey && 74 == t.keyCode && e(t),
-        83 == t.keyCode && (navigator.platform.match("Mac") ? t.metaKey : t.ctrlKey) && e(t),
-        t.ctrlKey && 85 == t.keyCode && e(t),
-        123 == event.keyCode && e(t)
-    }, !1)
-};
+        }),
+            t.find("a").on("click", function () {
+                var o = $(this).attr("data-filter");
+                return t.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
+                    filter: o,
+                    animationOptions: {
+                        animationDuration: 750,
+                        easing: "linear",
+                        queue: !1
+                    }
+                }), !1
+            })
+    }),
+    $(window).on("scroll", function () {
+        $(this).scrollTop() > 100 ? $(".back_top").fadeIn() : $(".back_top").fadeOut()
+    }),
+    $(".back_top").click(function () {
+        return $("html, body").animate({
+            scrollTop: 0
+        }, 1e3), !1
+    }),
+    $(".element").each(function () {
+        var e = $(this);
+        e.typed({
+            strings: e.attr("data-elements").split(","),
+            typeSpeed: 100,
+            backDelay: 3e3
+        })
+    });
 
