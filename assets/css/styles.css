@@ -369,6 +369,10 @@ button:focus {
     transition: all 0.3s ease 0s;
 }
 
+.custom-nav.stickyadd .navbar-toggler {
+    color: #000;
+}
+
 .custom-nav.stickyadd .navbar-nav li a:before {
     background: #000 !important;
 }
@@ -907,7 +911,7 @@ button:focus {
         RESPONSIVE
 ============================*/
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .custom-nav {
         margin-top: 0px;
         padding: 10px 0px !important;
