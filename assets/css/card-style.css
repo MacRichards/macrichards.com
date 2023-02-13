@@ -2,15 +2,18 @@ body {
     background-image: url("../images/home-bg.jpg");
     background-size: cover;
 }
+
 .container {
     padding: 0;
     width: fit-content;
     margin-top: 65px;
     margin-bottom: 15px;
 }
+
 .col {
     padding: 0;
 }
+
 .blur-background {
     background: rgba(245, 245, 245, 0.2);
     border-radius: 8px;
@@ -20,12 +23,14 @@ body {
     position: relative;
     width: 300px;
 }
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .blur-background {
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
     }
 }
+
 .profile-pic {
     width: 100px;
     margin-top: -65px;
@@ -34,31 +39,39 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.15);
 }
+
 h1 {
     margin-top: 8px;
 }
+
 .social-links i {
     font-size: 30px;
 }
+
 .left {
     text-align: left;
     float: left;
 }
+
 .item {
     border-radius: 8px;
     padding: 8px;
     width: auto;
     background: rgba(255, 255, 255, 0.7);
 }
+
 .item:not(:last-child) {
     margin: 10px 0 20px 0;
 }
+
 .sub-item:not(:first-child) {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .sub-item:not(:last-child) {
     padding-bottom: 3px;
 }
+
 .row div.ax {
     width: 33px;
     height: 33px;
@@ -66,26 +79,32 @@ h1 {
     margin-top: 4px;
     margin-right: 8px;
 }
+
 .row i.bx {
     font-size: 20px;
 }
+
 .row p {
     margin: 0;
     color: rgba(0, 0, 0, 0.4);
     font-size: 0.9rem;
 }
+
 .row h4 {
     margin: 0;
     color: rgba(0, 0, 0, 0.7);
     font-size: 0.95rem;
 }
+
 #map {
     height: 100px;
     margin-top: 10px;
 }
+
 #map .mapboxgl-canvas {
     border-radius: 8px;
 }
+
 #no-desk {
     width: 100%;
     height: calc(100% + 80px);
@@ -95,6 +114,7 @@ h1 {
     padding: 0;
     display: block;
 }
+
 @media (max-width: 991px) {
     #no-desk {
         display: none;
@@ -105,9 +125,11 @@ h1 {
     font-size: 40px;
     background: none;
 }
+
 #no-desk div h4 {
     color: #fff;
 }
+
 .no-desk-container {
     position: absolute;
     left: 50%;
@@ -118,23 +140,28 @@ h1 {
     border-radius: 8px;
     padding: 8px;
 }
+
 .no-desk-container div:last-child {
     margin-top: 8px;
 }
+
 .no-desk-button {
     background: rgba(255, 255, 255, 0.35);
     width: 50%;
     margin-top: 8px;
     border-radius: 8px;
 }
+
 .no-desk-button:hover {
     background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
+
 .no-desk-button i {
     font-size: 30px !important;
     margin-right: 8px;
 }
+
 .no-desk-button p {
     color: rgba(255, 255, 255, 0.7);
 }

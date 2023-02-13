@@ -92,6 +92,7 @@ button:focus {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -103,11 +104,12 @@ button:focus {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-}   
+}
 
 .back_top {
     text-align: center;
@@ -145,7 +147,7 @@ button:focus {
     background-color: #000;
 }
 
-.bg-custom{
+.bg-custom {
     background-color: #000;
 }
 
@@ -158,8 +160,8 @@ button:focus {
 }
 
 .text-white {
-    color: #fff!important;
-    }
+    color: #fff !important;
+}
 
 .header_section {
     padding: 200px 0px 120px;
@@ -545,6 +547,55 @@ button:focus {
         Works
 ============================*/
 
+.work_menu li {
+    margin-right: 0px !important;
+}
+
+.work_menu li:after {
+    content: "*";
+    top: 3px;
+    position: relative;
+    display: inline-block;
+    color: #bbb;
+    margin: 0px 8px;
+}
+
+.work_menu li:last-child:after {
+    content: "";
+    display: none;
+}
+
+.work_menu li a {
+    letter-spacing: 0.03em;
+    padding: 6px 16px;
+    border-radius: 5px;
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: all 0.5s;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+.work_menu li a.active {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.work_menu li a:hover {
+    background-color: #000;
+    color: #ffffff !important;
+}
+
+blockquote {
+    border: 1px solid #e7e7e7;
+    border-left: 4px solid #d6d6d6;
+    background-color: #f8f9fa;
+    padding: 14px 20px;
+}
+
 .lan_box_ser {
     border: 1px dotted #e7e7e7;
     transition: all 0.3s;
@@ -553,6 +604,10 @@ button:focus {
 .lan_box_ser:hover {
     background-color: #fff;
     cursor: pointer;
+}
+
+.lan_box_ser .ser_icon {
+    margin: auto;
 }
 
 .lan_box_ser .ser_icon i {
@@ -564,6 +619,10 @@ button:focus {
     border-radius: 2em;
     width: fit-content;
     padding: 0.12em 0.5em;
+}
+
+.hidden {
+    display: none;
 }
 
 /*===========================
@@ -917,74 +976,95 @@ button:focus {
         padding: 10px 0px !important;
         background-color: #fff !important;
     }
+
     .custom-nav .navbar-nav li a:before {
         content: '';
         display: none;
     }
+
     .custom-nav .navbar-nav li a {
         margin: 0 0px;
         padding: 6px 0;
         color: rgba(0, 0, 0, 0.55) !important;
     }
+
     .custom-nav .navbar-nav li.active a {
         color: #000 !important;
     }
+
     .custom-nav>.container {
         width: 90%;
     }
+
     .custom-nav .logo .logo-dark {
         display: inline-block;
     }
+
     .custom-nav .logo .logo-light {
         display: none;
     }
+
     .custom-nav .navbar-brand.logo img {
         height: 26px;
     }
+
     .navbar-nav {
         margin-top: 0px;
     }
+
     .navbar-toggler {
         font-size: 29px;
         margin-top: 0px;
         margin-bottom: 0px;
         color: #000;
     }
+
     .header_title {
         font-size: 40px;
         line-height: 1.2;
         height: 96px;
     }
+
     .header_subtitle {
         font-size: 15px;
         line-height: 1.8;
     }
-    .home-bg,.h-100vh.jarallax,.h-100vh.bg-dark {
+
+    .home-bg,
+    .h-100vh.jarallax,
+    .h-100vh.bg-dark {
         padding: 110px 0 170px 0;
     }
+
     .h-100vh {
         height: auto;
     }
+
     .custom-nav .navbar-brand.logo img {
         height: 26px;
     }
+
     .about-detail .about-work li::after,
     .work_menu li:after {
         display: none;
         content: "";
     }
+
     .about-detail .about-work li {
         margin-right: 7px;
         margin-left: 7px;
     }
+
     .copy-rights {
         line-height: 26px;
     }
+
     .float_none.float-right,
     .float_none.float-left {
         float: none !important;
         text-align: center;
     }
+
     .work_menu li a {
         margin: 8px 10px;
     }

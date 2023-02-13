@@ -20,14 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
-
-
-!function($){
+! function($) {
 
     "use strict";
 
-    var Typed = function(el, options){
+    var Typed = function(el, options) {
 
         // chosen element to manipulate text
         this.el = $(el);
@@ -86,11 +83,12 @@
         this.build();
     };
 
-        Typed.prototype =  {
+    Typed.prototype = {
 
-            constructor: Typed
+        constructor: Typed
 
-            , init: function(){
+            ,
+        init: function() {
                 // begin the loop w/ first current string (global self.string)
                 // current string will be passed as an argument each time after this
                 var self = this;
@@ -100,20 +98,22 @@
                 }, self.startDelay);
             }
 
-            , build: function(){
+            ,
+        build: function() {
                 // Insert cursor
-                if (this.showCursor === true){
-                  this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
-                  this.el.after(this.cursor);
+                if (this.showCursor === true) {
+                    this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+                    this.el.after(this.cursor);
                 }
                 this.init();
             }
 
             // pass current string state to each function, types 1 char per call
-            , typewrite: function(curString, curStrPos){
+            ,
+        typewrite: function(curString, curStrPos) {
                 // exit when stopped
-                if(this.stop === true)
-                   return;
+                if (this.stop === true)
+                    return;
 
                 // varying values for setTimeout during typing
                 // can't be global since number changes each time loop is executed
@@ -136,70 +136,71 @@
                     var charPause = 0;
                     var substr = curString.substr(curStrPos);
                     if (substr.charAt(0) === '^') {
-                        var skip = 1;  // skip atleast 1
-                        if(/^\^\d+/.test(substr)) {
-                           substr = /\d+/.exec(substr)[0];
-                           skip += substr.length;
-                           charPause = parseInt(substr);
+                        var skip = 1; // skip atleast 1
+                        if (/^\^\d+/.test(substr)) {
+                            substr = /\d+/.exec(substr)[0];
+                            skip += substr.length;
+                            charPause = parseInt(substr);
                         }
 
                         // strip out the escape character and pause value so they're not printed
-                        curString = curString.substring(0,curStrPos)+curString.substring(curStrPos+skip);
+                        curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip);
                     }
 
                     // timeout for any pause after a character
                     self.timeout = setTimeout(function() {
-                        if(curStrPos === curString.length) {
-                           // fires callback function
-                           self.options.onStringTyped(self.arrayPos);
+                        if (curStrPos === curString.length) {
+                            // fires callback function
+                            self.options.onStringTyped(self.arrayPos);
 
                             // is this the final string
-                           if(self.arrayPos === self.strings.length-1) {
-                              // animation that occurs on the last typed string
-                              self.options.callback();
+                            if (self.arrayPos === self.strings.length - 1) {
+                                // animation that occurs on the last typed string
+                                self.options.callback();
 
-                              self.curLoop++;
+                                self.curLoop++;
 
-                              // quit if we wont loop back
-                              if(self.loop === false || self.curLoop === self.loopCount)
-                                 return;
-                           }
+                                // quit if we wont loop back
+                                if (self.loop === false || self.curLoop === self.loopCount)
+                                    return;
+                            }
 
-                           self.timeout = setTimeout(function(){
-                              self.backspace(curString, curStrPos);
-                           }, self.backDelay);
+                            self.timeout = setTimeout(function() {
+                                self.backspace(curString, curStrPos);
+                            }, self.backDelay);
                         } else {
 
-                           /* call before functions if applicable */
-                           if(curStrPos === 0)
-                              self.options.preStringTyped(self.arrayPos);
+                            /* call before functions if applicable */
+                            if (curStrPos === 0)
+                                self.options.preStringTyped(self.arrayPos);
 
-                           // start typing each new char into existing string
-                           // curString: arg, self.baseText: original text inside element
-                           var nextString = self.baseText + curString.substr(0, curStrPos+1);
-                           if (self.attr) {
-                            self.el.attr(self.attr, nextString);
-                           } else {
-                            self.el.text(nextString);
-                           }
+                            // start typing each new char into existing string
+                            // curString: arg, self.baseText: original text inside element
+                            var nextString = self.baseText + curString.substr(0, curStrPos + 1);
+                            if (self.attr) {
+                                self.el.attr(self.attr, nextString);
+                            } else {
+                                self.el.text(nextString);
+                            }
 
-                           // add characters one by one
-                           curStrPos++;
-                           // loop the function
-                           self.typewrite(curString, curStrPos);
+                            // add characters one by one
+                            curStrPos++;
+                            // loop the function
+                            self.typewrite(curString, curStrPos);
                         }
-                    // end of character pause
+                        // end of character pause
                     }, charPause);
 
-                // humanized value for typing
+                    // humanized value for typing
                 }, humanize);
 
             }
 
-            , backspace: function(curString, curStrPos){
+            ,
+        backspace: function(curString, curStrPos) {
                 // exit when stopped
                 if (this.stop === true) {
-                   return;
+                    return;
                 }
 
                 // varying values for setTimeout during typing
@@ -226,14 +227,14 @@
                     // replace text with base text + typed characters
                     var nextString = self.baseText + curString.substr(0, curStrPos);
                     if (self.attr) {
-                     self.el.attr(self.attr, nextString);
+                        self.el.attr(self.attr, nextString);
                     } else {
-                     self.el.text(nextString);
+                        self.el.text(nextString);
                     }
 
                     // if the number (id of character in current string) is
                     // less than the stop number, keep going
-                    if (curStrPos > self.stopNum){
+                    if (curStrPos > self.stopNum) {
                         // subtract characters one by one
                         curStrPos--;
                         // loop the function
@@ -244,14 +245,14 @@
                     else if (curStrPos <= self.stopNum) {
                         self.arrayPos++;
 
-                        if(self.arrayPos === self.strings.length) {
-                           self.arrayPos = 0;
-                           self.init();
+                        if (self.arrayPos === self.strings.length) {
+                            self.arrayPos = 0;
+                            self.init();
                         } else
                             self.typewrite(self.strings[self.arrayPos], curStrPos);
                     }
 
-                // humanized value for typing
+                    // humanized value for typing
                 }, humanize);
 
             }
@@ -275,26 +276,27 @@
             // }
 
             // Reset and rebuild the element
-            , reset: function(){
-                var self = this;
-                clearInterval(self.timeout);
-                var id = this.el.attr('id');
-                this.el.after('<span id="' + id + '"/>')
-                this.el.remove();
-                this.cursor.remove();
-                // Send the callback
-                self.options.resetCallback();
-            }
+            ,
+        reset: function() {
+            var self = this;
+            clearInterval(self.timeout);
+            var id = this.el.attr('id');
+            this.el.after('<span id="' + id + '"/>')
+            this.el.remove();
+            this.cursor.remove();
+            // Send the callback
+            self.options.resetCallback();
+        }
 
-        };
+    };
 
-    $.fn.typed = function (option) {
-        return this.each(function () {
-          var $this = $(this)
-            , data = $this.data('typed')
-            , options = typeof option == 'object' && option;
-          if (!data) $this.data('typed', (data = new Typed(this, options)));
-          if (typeof option == 'string') data[option]();
+    $.fn.typed = function(option) {
+        return this.each(function() {
+            var $this = $(this),
+                data = $this.data('typed'),
+                options = typeof option == 'object' && option;
+            if (!data) $this.data('typed', (data = new Typed(this, options)));
+            if (typeof option == 'string') data[option]();
         });
     };
 

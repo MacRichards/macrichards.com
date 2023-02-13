@@ -13,17 +13,16 @@ $("#status").fadeOut(),
     $("body").delay(350).css({
         overflow: "visible",
     }),
-    $(window).on("scroll", function () {
-        $(window).scrollTop() >= 50
-            ? $(".sticky").addClass("stickyadd")
-            : $(".sticky").removeClass("stickyadd");
+    $(window).on("scroll", function() {
+        $(window).scrollTop() >= 50 ?
+            $(".sticky").addClass("stickyadd") :
+            $(".sticky").removeClass("stickyadd");
     }),
-    $(".navbar-nav a, .scroll_down a").on("click", function (e) {
+    $(".navbar-nav a, .scroll_down a").on("click", function(e) {
         var t = $(this);
         $("html, body")
             .stop()
-            .animate(
-                {
+            .animate({
                     scrollTop: $(t.attr("href")).offset().top - 0,
                 },
                 1500,
@@ -37,7 +36,7 @@ $("#status").fadeOut(),
 var a = 0;
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav div div ul li");
-$(window).on("scroll", function () {
+$(window).on("scroll", function() {
     var current = "home";
 
     sections.forEach((section) => {
@@ -53,18 +52,18 @@ $(window).on("scroll", function () {
             li.classList.add("active");
         }
     });
-    $(window).on("load", function () {
+    $(window).on("load", function() {
         var e = $(".work-filter"),
             t = $("#menu-filter");
         e.isotope({
-            filter: "*",
-            layoutMode: "masonry",
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-            },
-        }),
-            t.find("a").on("click", function () {
+                filter: "*",
+                layoutMode: "masonry",
+                animationOptions: {
+                    duration: 750,
+                    easing: "linear",
+                },
+            }),
+            t.find("a").on("click", function() {
                 var o = $(this).attr("data-filter");
                 return (
                     e.isotope({
@@ -79,15 +78,14 @@ $(window).on("scroll", function () {
                 );
             });
     });
-    $(window).on("scroll", function () {
-        $(this).scrollTop() > 100
-            ? $(".back_top").fadeIn()
-            : $(".back_top").fadeOut();
-    }),
-        $(".back_top").click(function () {
+    $(window).on("scroll", function() {
+            $(this).scrollTop() > 100 ?
+                $(".back_top").fadeIn() :
+                $(".back_top").fadeOut();
+        }),
+        $(".back_top").click(function() {
             return (
-                $("html, body").animate(
-                    {
+                $("html, body").animate({
                         scrollTop: 0,
                     },
                     1e3
@@ -95,7 +93,7 @@ $(window).on("scroll", function () {
                 !1
             );
         }),
-        $(".element").each(function () {
+        $(".element").each(function() {
             var e = $(this);
             e.typed({
                 strings: e.attr("data-elements").split(","),
