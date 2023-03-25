@@ -503,6 +503,54 @@ button:focus {
     transition: all .2s;
 }
 
+.typed-cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
 /*==========================
         ABOUT ME
 ============================*/
@@ -590,20 +638,22 @@ button:focus {
 }
 
 blockquote {
-    border: 1px solid #e7e7e7;
+    border: 1px solid #dfe1e5;
     border-left: 4px solid #d6d6d6;
     background-color: #f8f9fa;
     padding: 14px 20px;
 }
 
 .lan_box_ser {
-    border: 1px dotted #e7e7e7;
+    border: 1px solid #dfe1e5;
     transition: all 0.3s;
 }
 
 .lan_box_ser:hover {
     background-color: #fff;
     cursor: pointer;
+    box-shadow: 0 1px 6px rgba(32, 44, 46, 0.28);
+    border-color: rgba(223, 255, 229, 0);
 }
 
 .lan_box_ser .ser_icon {
@@ -638,7 +688,7 @@ blockquote {
     content: "";
     height: 100%;
     left: 0;
-    background-color: #e7e7e7;
+    background-color: #dfe1e5;
     margin: 0;
     position: absolute;
     right: 0;
@@ -648,7 +698,7 @@ blockquote {
 
 .cv_edu_exp .cv_edu_exp_box {
     border-radius: 7px;
-    border: 1px solid #e7e7e7;
+    border: 1px solid #dfe1e5;
     margin-left: 20px;
     padding: 20px;
 }
@@ -880,7 +930,7 @@ blockquote {
 }
 
 /*==========================
-        AWARDS
+        Affiliations
 ============================*/
 
 .logo_img img {
