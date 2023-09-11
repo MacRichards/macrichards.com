@@ -6,7 +6,7 @@ My personal website.
 <img src="https://api.thegreenwebfoundation.org/greencheckimage/macrichards.com?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
 
 # License
-    Copyright (C) 2021 MacRichards
+    Copyright (C) 2023 MacRichards
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
