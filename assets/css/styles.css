@@ -195,10 +195,6 @@ button:focus {
     background-color: #000;
 }
 
-.section-main-title {
-    max-width: 570px;
-}
-
 .main-title-border::after,
 .main-title-border::before {
     display: inline-block;
