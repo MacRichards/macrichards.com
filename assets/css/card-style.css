@@ -1,19 +1,9 @@
-.col {
-    padding: 0;
-}
-
 /*======================
         HEADER
 ========================*/
 
-h1 {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-h1 span {
-    font-size: 15px;
-    color: rgba(252, 251, 249, 0.4);
+.header {
+    margin-top: 20px;
 }
 
 .header .logo {
@@ -22,56 +12,63 @@ h1 span {
 
 .header h1 {
     color: var(--bg-light) !important;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .header p {
     color: var(--bg-light) !important;
-    margin-top: 30px !important;
+    margin-top: 15px !important;
 }
 
 .header-height-adjust {
-    height: 300px;
+    height: 220px;
     width: 100%;
-    position: relative;
     overflow: hidden;
+}
+
+.header-height-adjust::before {
+    content: "";
+    background-color: var(--accent-dark);
+    display: block;
+    width: 120vw;
+    height: 220px;
+    left: -10vw;
+    position: absolute;
+    right: 0;
+    top: -10vw;
+    bottom: 0;
+    transform: rotate(-10deg);
+    z-index: 0;
 }
 
 .header-height-adjust::after {
     content: "";
-    background-color: #f4f0e9;
+    background-color: var(--bg-dark);
     display: block;
-    width: 120%;
-    height: 180px;
-    left: 0;
+    width: 120vw;
+    height: 220px;
+    left: -10vw;
     position: relative;
     right: 0;
-    bottom: 80px;
+    bottom: 50px;
     transform: rotate(-10deg);
+    z-index: -1;
 }
 
 .cover-img {
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     position: relative;
     float: right;
     right: -25px;
+    top: -90px;
     z-index: 2;
     border-radius: 50%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.social-links {
-    padding-top: 15px;
-}
-
-.social-links i {
-    font-size: 20px;
-}
-
-.left {
-    text-align: left;
-    float: left;
+.card-about {
+    padding: 10px;
 }
 
 /*======================
@@ -87,60 +84,35 @@ h1 span {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.row div.ax {
-    width: 33px;
-    height: 33px;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-right: 8px;
-}
-
-.row i.bx {
+.item i {
     font-size: 20px;
+    margin-top: 10px;
 }
 
-.row p {
+.item p {
     margin: 0;
     color: rgba(0, 0, 0, 0.4);
     font-size: 0.9rem;
 }
 
-.row h4 {
+.item h4 {
     margin: 0;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 /*======================
         NO DESK
 ========================*/
 
-.blur-background {
-    background: rgba(245, 245, 245, 0.2);
-    border-radius: 8px;
-    box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    display: block;
-    position: relative;
-    width: 300px;
-}
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .blur-background {
-        -webkit-backdrop-filter: blur(25px);
-        backdrop-filter: blur(25px);
-    }
-}
-
 #no-desk {
     width: 100%;
-    height: calc(100% + 80px);
+    height: 100%;
     position: absolute;
-    top: -65px;
-    border-radius: 0;
-    padding: 0;
+    top: 0px;
     display: block;
     z-index: 1000000;
+    background: var(--bg-light);
 }
 
 @media (max-width: 991px) {
@@ -149,47 +121,20 @@ h1 span {
     }
 }
 
-#no-desk div i {
-    font-size: 40px;
-    background: none;
-}
-
-#no-desk div h4 {
-    color: #fff;
-}
-
-.no-desk-container {
+#no-desk .container {
     position: absolute;
     left: 50%;
     top: 50%;
+    width: 500px;
     transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.no-desk-container div:last-child {
-    margin-top: 8px;
-}
-
-.no-desk-button {
-    background: rgba(255, 255, 255, 0.35);
-    width: 50%;
-    margin-top: 8px;
+    background: var(--bg-dark);
     border-radius: 8px;
 }
 
-.no-desk-button:hover {
-    background: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
+#no-desk .container div:last-child {
+    margin-top: 8px;
 }
 
-.no-desk-button i {
-    font-size: 30px !important;
-    margin-right: 8px;
-}
-
-.no-desk-button p {
-    color: rgba(255, 255, 255, 0.7);
+#no-desk i {
+    color: var(--red);
 }

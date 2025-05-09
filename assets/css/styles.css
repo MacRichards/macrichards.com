@@ -14,18 +14,9 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Libre Baskerville", serif;
     overflow-x: hidden;
     background-color: var(--bg-light);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Libre Baskerville", serif;
 }
 
 h2 {
@@ -111,7 +102,9 @@ button:focus {
     color: var(--accent-light);
     transition: all 0.5s;
     font-size: 15px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
 }
 
 .btn-custom:hover,
@@ -126,6 +119,17 @@ button:focus {
     background-color: var(--accent-light);
     border-color: var(--accent-dark);
     color: var(--accent-dark);
+}
+
+.main-title-border::after,
+.main-title-border::before {
+    display: inline-block;
+    margin-top: -4px;
+    vertical-align: middle;
+    content: "";
+    background-color: #d0d0d0;
+    width: 30px;
+    height: 1px;
 }
 
 /*==========================
@@ -144,6 +148,7 @@ button:focus {
 
 .custom-nav .navbar-nav li a {
     color: var(--accent-light);
+    font-family: "Roboto", sans-serif;
     font-size: 0.75rem;
     padding: 15px 0;
     position: relative;
@@ -263,6 +268,7 @@ button:focus {
 .cv_edu_exp .cv_edu_exp_box .cv_edu_exp_year {
     position: relative;
     margin: 0 0 10px 15px !important;
+    font-family: "Roboto", sans-serif;
 }
 
 .cv_edu_exp .cv_edu_exp_box .cv_edu_exp_year::after {
@@ -320,6 +326,48 @@ button:focus {
     display: none;
 }
 
+/*===========================
+        PUBLICATIONS
+=============================*/
+
+.pub_tag {
+    font-weight: 600;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.pub_blog {
+    color: #006b91;
+}
+
+.pub_article {
+    color: #781313;
+}
+
+.pub_title_article:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #781313;
+    cursor: pointer;
+}
+
+.pub_title_blog:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #006b91;
+    cursor: pointer;
+}
+
+.pub_smcp {
+    font-variant-caps: small-caps;
+}
+
+.pub_seperator {
+    font-size: 10px;
+    color: #dfe1e5;
+}
+
 /*==========================
         CONTACT US
 ============================*/
@@ -340,14 +388,20 @@ button:focus {
     border-color: #000;
 }
 
+.contact_form input {
+    font-family: "Roboto", sans-serif;
+}
+
 .contact_form textarea.form-control {
     height: auto;
+    font-family: "Roboto", sans-serif;
 }
 
 .error {
     margin: 8px 0px;
     display: none;
     color: red;
+    font-family: "Roboto", sans-serif;
 }
 
 .error_msg {
@@ -356,6 +410,7 @@ button:focus {
     font-size: 18px;
     color: red;
     font-weight: 700;
+    font-family: "Roboto", sans-serif;
 }
 
 .gig_loader {
@@ -370,6 +425,11 @@ button:focus {
 #success_msg h3 {
     color: #0dba26;
     font-size: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+.copy-rights {
+    font-family: "Roboto", sans-serif;
 }
 
 /*==========================
@@ -449,6 +509,7 @@ button:focus {
 
     .copy-rights {
         line-height: 26px;
+        font-family: "Roboto", sans-serif;
     }
 
     .float_none.float-right,

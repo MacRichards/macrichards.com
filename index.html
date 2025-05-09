@@ -1,455 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Richards - Personal Resume</title>
+    <meta name="description" content="Professional CV for Mr. Richards" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="MacRichards" />
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" />
+    <!-- Vender CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/9c6ad30628.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Michael Richards - Personal Resume</title>
-	<meta name="description" content="Professional CV for Mr. Richards"/>
-	<meta name="keywords" content=""/>
-	<meta name="author" content="MacRichards"/>
-	<link rel="shortcut icon" href="assets/images/favicon.jpg">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/9c6ad30628.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/css/styles.css">
-</head>
+  <body>
+    <!-- START Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="index.html">
+          <img src="assets/images/favicon.jpg" class="img-fluid" />
+        </a>
 
-<body>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active" label="Home">
+              <a href="#Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item" label="About">
+              <a href="#About" class="nav-link">About</a>
+            </li>
+            <li class="nav-item" label="Education">
+              <a href="#Education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item" label="Experience">
+              <a href="#Experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item" label="Publications">
+              <a href="#Publications" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item" label="Contact">
+              <a href="#Contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END Navbar -->
 
-	<!-- START Navbar -->
-	<nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-		<div class="container">
-			<!-- Logo -->
-			<a class="navbar-brand logo" href="index.html">
-				<img src="assets/images/favicon.jpg" class="img-fluid"/>
-			</a>
+    <!-- START Home -->
+    <section class="home-bg section" id="Home">
+      <div class="container">
+        <div class="row justify-content-left">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h1 class="header_title mb-0 mt-3">Michael "Mac" Richards</h1>
+              <h2 class="header_subtitle">JD Candidate</h2>
+              <!-- Socials -->
+              <ul class="social list-unstyled text-center pt-4">
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/macrichards/"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/macrichards/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HOME -->
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fa-solid fa-bars"></i>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active" label="Home">
-						<a href="#Home" class="nav-link">Home</a>
-					</li>
-					<li class="nav-item" label="About">
-						<a href="#About" class="nav-link">About</a>
-					</li>
-					<li class="nav-item" label="Education">
-						<a href="#Education" class="nav-link">Education</a>
-					</li>
-					<li class="nav-item" label="Experience">
-						<a href="#Experience" class="nav-link">Experience</a>
-					</li>
-					<li class="nav-item" label="Contact">
-						<a href="#Contact" class="nav-link">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END Navbar -->
+    <!-- START About -->
+    <section class="section" id="About">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mx-auto col-lg-10">
+              <h2>About Me</h2>
+              <div class="main-title-border">
+                <i class="fa-solid fa-asterisk"></i>
+              </div>
+              <p class="text-muted mx-auto mt-4">
+                Mac Richards is a law student at American University Washington
+                College of Law, focusing on international criminal law and
+                technology law. He has previously worked with the War Crimes
+                Research Office, the Human Rights Brief, and Scouting America,
+                and will be studying international counterterrorism law at the
+                Asser Institute in The Hague.
+              </p>
+              <p class="text-muted mx-auto mt-4">
+                His research centers on accountability for war crimes and human
+                rights violations under international law, with an emphasis on
+                corporate responsibility in conflict settings. His work has
+                explored issues including atrocities committed during the
+                Russian invasion of Ukraine, international crimes in the
+                Democratic Republic of the Congo, and the intersection of
+                business and international criminal liability.
+              </p>
+              <p class="text-muted mx-auto mt-4">
+                In addition to his academic work, he has contributed to legal
+                blogs and journals, served as a blog writer for the
+                International Criminal Law blog, and will work on post-conflict
+                legal development initiatives through the Lawyering Peace
+                Program. He brings over a decade of national leadership
+                experience in youth development and public service through
+                Scouting America, and has a technical background in IT
+                infrastructure and web systems integration.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <img
+              src="assets/images/about-2.jpg"
+              alt=""
+              class="img-fluid mx-auto d-block"
+              style="max-width: 400px"
+            />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="skill-custom text-center">
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">Legal Research</p>
+              </div>
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">
+                  Legal Writing & Analysis
+                </p>
+              </div>
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">Human Rights Advocacy</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="skill-custom text-center">
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">Policy Analysis</p>
+              </div>
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">
+                  Public Speaking & Communication
+                </p>
+              </div>
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">Project Management</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="skill-custom text-center">
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">
+                  IT & Infrastructure Support
+                </p>
+              </div>
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">
+                  Cross-Cultural Competence
+                </p>
+              </div>
+              <div class="clearfix">
+                <p class="text-dark font-weight-bold">
+                  Collaborative Leadership
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="text-center">
+              <a class="btn-custom" href="Michael_Richards_Resume.pdf"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END About -->
 
-	<!-- START Home -->
-	<section class="home-bg section" id="Home">
-		<div class="container">
-			<div class="row justify-content-left">
-				<div class="col-lg-12">
-					<div class="text-center">
-						<h1 class="header_title mb-0 mt-3">Michael "Mac" Richards</h1>
-						<h2 class="header_subtitle">JD Candidate</h2>
-						<!-- Socials -->
-						<ul class="social list-unstyled text-center pt-4">
-						    <li class="list-inline-item"><a href="https://www.linkedin.com/in/macrichards/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-							<li class="list-inline-item"><a href="https://www.instagram.com/macrichards/"><i class="fa-brands fa-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END HOME -->
+    <!-- START Education -->
+    <section class="section bg-dark" id="Education">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-center mx-auto section-main-title">
+              <h2>My Education</h2>
+              <div class="main-title-border">
+                <i class="fa-solid fa-asterisk"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 pt-4">
+          <div class="col-lg-12">
+            <div class="cv_edu_exp mt-3">
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div
+                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
+                    >
+                      2024 - 2027
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4>Juris Doctor</h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>American University Washington College of Law</i>
+                      </div>
+                      <p class="cv_desc mb-0">
+                        <b>Journal:</b> Business Law Review,
+                        <i>Junior Staffer</i><br />
+                        <b>Activities</b>: Human Rights Brief,
+                        <i>Senior Columns Editor</i>
+                        | War Crimes Research Office,
+                        <i>Blog Writer</i> | Lawyering Peace Program<br /><b
+                          >Study Abroad</b
+                        >: T.M.C. Asser Institute, The Hague, NL, June 2025
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div
+                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
+                    >
+                      2020 - 2023
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4>Bachelor's in Political Science</h4>
+                      <p class="cv_desc mb-0">
+                        Minor in Law, Societies, and Justice
+                      </p>
+                      <div class="font-weight-bold text-dark">
+                        <i>University of Washington</i>
+                      </div>
+                      <p class="cv_desc mb-0">
+                        <b>overall GPA</b>: 3.61<br />
+                        <b>Honors</b>: Dean's List<br />
+                        <b>Activities</b>: Phi Alpha Delta Pre-Law Fraternity,
+                        <i>Social Committee Member</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Education -->
 
-	<!-- START About -->
-	<section class="section" id="About">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="text-center mx-auto col-lg-10">
-						<h2>About Me</h2>
-						<div class="main-title-border">
-							<i class="fa-solid fa-asterisk"></i>
-						</div>
-						<p class="text-muted mx-auto mt-4">I am a dedicated professional with a Bachelor's degree in Political Science from the University of Washington, where I specialized in international humanitarian law. My rigorous academic research resulted in several unpublished papers, enhancing my analytical and critical thinking abilities for tackling complex legal issues.<br />Currently, I am a Law Student at American University, building on my foundational knowledge and preparing for a career in law. My legal education is further refining my skills and broadening my understanding of various legal domains.<br />Previously, I contributed my expertise as a Legal Assistant at Suttell & Hammer, where I supported the legal team with precision and efficiency. My role demanded strong organizational skills, meticulous attention to detail, and the ability to manage multiple tasks, all of which I excel at.<br />In addition to my academic and professional pursuits, I am passionate about community service. As a National Key Volunteer for the Boy Scouts of America’s Technology Subcommittee, I help foster leadership and character development in young individuals, while leveraging technology to improve organizational efficiency.<br />With a solid academic background, practical experience, and a commitment to community service, I am equipped to contribute meaningfully to the legal field and the broader realm of humanitarian affairs.</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-				    <img src="assets/images/about-2.jpg" alt="" class="img-fluid mx-auto d-block" style="max-width: 400px;">
-				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col-lg-4">
-					<div class="skill-custom text-center">
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Legal Administration</p>
-						</div>
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Legal Document Preparation</p>
-						</div>
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Microsoft Office</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="skill-custom text-center">
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Criminology</p>
-						</div>
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Legal Writing</p>
-						</div>
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Office Administration</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="skill-custom text-center">
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Legal Research</p>
-						</div>
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Customer Service</p>
-						</div>
-						<div class="clearfix">
-							<p class="text-dark font-weight-bold">Information Technology</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-5">
-			    <div class="col-12">
-					<div class="text-center">
-					    <a class="btn-custom" href="Michael_Richards_Resume.pdf">Resume</a>
-						<a class="btn-custom" href="#">Writing Sample</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END About -->
+    <!-- START Experience -->
+    <section class="section" id="Experience">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-center mx-auto section-main-title">
+              <h2>My Experiences</h2>
+              <div class="main-title-border">
+                <i class="fa-solid fa-asterisk"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 pt-4">
+          <div class="col-lg-12">
+            <div class="cv_edu_exp mt-3">
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div
+                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
+                    >
+                      Oct. 2023 - Jul. 2024
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4>Legal Assistant</h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>Suttell & Hammer</i>
+                      </div>
+                      <ul class="cv_desc mb-0">
+                        <li>
+                          Prepared motions to amend, judgment renewals, and
+                          judgment domestications.
+                        </li>
+                        <li>
+                          Conducted legal research and utilized JST Collect Max
+                          for case management.
+                        </li>
+                        <li>
+                          Entered judgment data and e-filed motions with the
+                          court.
+                        </li>
+                        <li>
+                          Coordinated with courts to maintain a hearing
+                          calendar.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div
+                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
+                    >
+                      Oct. 2021 - Mar. 2023
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4>Learning Spaces IT Student Assistant</h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>University of Washington</i>
+                      </div>
+                      <ul class="cv_desc mb-0">
+                        <li>
+                          Responded to eight queries a day on the phone, via
+                          email, or through an IT ticketing system.
+                        </li>
+                        <li>
+                          Set up and maintained video matrix servers and other
+                          IT infrastructure.
+                        </li>
+                        <li>
+                          Resolved network issues alongside faculty and staff.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div
+                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
+                    >
+                      Jan. 2019 - Dec. 2024
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4>National Key Volunteer</h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>Scouting America</i>
+                      </div>
+                      <ul class="cv_desc mb-0">
+                        <li>
+                          Oversaw, planned, led, and developed high-profile
+                          projects as directed by the National Committee.
+                        </li>
+                        <li>
+                          Followed and maintained operational methods,
+                          accounting procedures, and tracked information.
+                        </li>
+                        <li>
+                          Delegated daily tasks to over six volunteers to
+                          provide development opportunities.
+                        </li>
+                        <li>
+                          Supervised site investigations, reported issues, and
+                          escalated those that required further assistance.
+                        </li>
+                      </ul>
+                      <p>
+                        <b>Awards</b>:
+                        <a
+                          href="https://oa-scouting.org/distinguished-service-award-past-recipients-2000-present"
+                          target="_blank"
+                          >Distinguished Service Award</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Experience -->
 
-	<!-- START Education -->
-	<section class="section bg-dark" id="Education">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="text-center mx-auto section-main-title">
-						<h2>My Education</h2>
-						<div class="main-title-border">
-							<i class="fa-solid fa-asterisk"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-4 pt-4">
-				<div class="col-lg-12">
-					<div class="cv_edu_exp mt-3">
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">2024 - 2027</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Juris Doctor</h4>
-										<div class="font-weight-bold text-dark"><i>American University Washington College of Law</i></div>
-										<p class="cv_desc mb-0"><b>Activities and societies</b>: Staff Writer, Human Rights Breif.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">2020 - 2023</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Bachelor's in Political Science</h4>
-										<p class="cv_desc mb-0">Minor in Law, Societies, and Justice</p>
-										<div class="font-weight-bold text-dark"><i>University of Washington</i></div>
-										<p class="cv_desc mb-0"><b>overall GPA</b>: 3.61<br><b>Course Highlights</b>: Comparative Law; Constitutional Law; International Human Rights Law; International Humanitarian Law; International Relations<br><b>Activities and societies</b>: Social Committee Member, Phi Alpha Delta Pre-Law Fraternity.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END Education -->
+    <!-- START Publications -->
+    <section class="section bg-dark" id="Publications">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-center mx-auto section-main-title">
+              <h2>Publications</h2>
+              <div class="main-title-border">
+                <i class="fa-solid fa-asterisk"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 pt-4">
+          <div class="col-lg-12">
+            <div class="cv_edu_exp mt-3">
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="cv_edu_exp_year">
+                      <span class="pub_tag pub_article"> Article </span>
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4 class="pub_title_article">
+                        Business Accountability in Business Dealings with War
+                        Criminals
+                      </h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>Human Rights Brief</i>
+                      </div>
+                      <p class="cv_desc mb-0">
+                        <span class="pub_smcp">Vol. 28 No. 2</span>
+                        <i class="pub_seperator fa-solid fa-diamond"></i>
+                        Forthcoming
+                        <i class="pub_seperator fa-solid fa-diamond"></i>
+                        This article examines international legal mechanisms for
+                        holding corporations accountable when doing business
+                        with sanctioned war criminals. It analyzes the
+                        Dodd-Frank Act, the EU Conflict Minerals Regulation, and
+                        the Rome Statute, and proposes reforms to address legal
+                        gaps.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="cv_edu_exp_year">
+                      <span class="pub_tag pub_blog"> Blog </span>
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4
+                        class="pub_title_blog"
+                        onclick="window.open('https://propertylawtoday.org/posts/2025/richards-internet-takings/')"
+                      >
+                        Taking the Internet by Law
+                      </h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>Property Law Today</i>
+                      </div>
+                      <p class="cv_desc mb-0">
+                        Apr. 20, 2025
+                        <i class="pub_seperator fa-solid fa-diamond"></i>
+                        The article argues that Comcast’s monopoly over internet
+                        infrastructure in many areas has led to slow service and
+                        predatory pricing, harming vulnerable communities. It
+                        proposes that local governments could use eminent domain
+                        under the Fifth Amendment to seize Comcast’s
+                        infrastructure and open it to competition, similar to
+                        the
+                        <i>Kelo v. City of New London</i>
+                        case. Given the internet's essential role in modern
+                        life, such a move could be justified as serving the
+                        public interest.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cv_edu_exp_box mt-4">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="cv_edu_exp_year">
+                      <span class="pub_tag pub_blog"> Blog </span>
+                    </div>
+                    <div class="cb_edu_exp_detail">
+                      <h4
+                        class="pub_title_blog"
+                        onclick="window.open('https://wcrointlcrimlawupdates.wordpress.com/author/mr6982a/')"
+                      >
+                        International Criminal Law Updates
+                      </h4>
+                      <div class="font-weight-bold text-dark">
+                        <i>
+                          War Crimes Research Office of American University
+                          Washington College of Law
+                        </i>
+                      </div>
+                      <p class="cv_desc mb-0">
+                        Feb. &ndash; Apr. 2025
+                        <i class="pub_seperator fa-solid fa-diamond"></i>
+                        Reported on developments on the International Criminal
+                        Court's investigation into the Situation in Ukraine and
+                        Preliminary Investigation into the Republic of Belarus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Publications -->
 
-	<!-- START Experience -->
-	<section class="section" id="Experience">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="text-center mx-auto section-main-title">
-						<h2>My Work & Extracurricular Experience</h2>
-						<div class="main-title-border">
-							<i class="fa-solid fa-asterisk"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-4 pt-4">
-				<div class="col-lg-12">
-					<div class="cv_edu_exp mt-3">
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">Oct. 2023 - Jul. 2024</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Legal Assistant</h4>
-										<div class="font-weight-bold text-dark"><i>Suttell & Hammer</i></div>
-										<ul class="cv_desc mb-0">
-                                            <li>Responsible for judgment data entry, motion preparation, court e-filing, and court coordination.</li>
-                                            <li>Conducted thorough legal research and utilized JST Collect Max for case management.</li>
-                                            <li>Demonstrated exceptional attention to detail in drafting and managing legal documents.</li>
-                                            <li>Provided comprehensive office administration support, ensuring efficient day-to-day operations.</li>
-                                        </ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">Oct. 2021 - Mar. 2023</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Learning Spaces IT Student Assistant</h4>
-										<div class="font-weight-bold text-dark"><i>Foster School of Business</i></div>
-										<ul class="cv_desc mb-0">
-                                            <li>Responded to 8 queries a day on phone, via email, or through an IT ticketing system.</li>
-                                            <li>Set up and maintained video matrix servers and other IT infrastructure.</li>
-                                            <li>Worked with faculty and staff to resolve network issues.</li>
-                                        </ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">Jan. 2019 - Present</div>
-									<div class="cb_edu_exp_detail">
-										<h4>National Key Volunteer</h4>
-										<div class="font-weight-bold text-dark"><i>Boy Scouts of America</i></div>
-										<ul class="cv_desc mb-0">
-                                            <li>Updated operations methods, oversaw accounting procedures, and tracked information.</li>
-                                            <li>Delegated daily tasks to over 12 volunteers to provide development opportunities.</li>
-                                            <li>Oversaw high-profile projects by planning, designing, and scheduling phases.</li>
-                                            <li>Supervised site investigations reported issues and escalated those that required further assistance.</li>
-                                        </ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END Experience -->
+    <!-- START Contact -->
+    <section class="section" id="Contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-center mx-auto section-main-title">
+              <h2>Get In Touch</h2>
+              <div class="main-title-border">
+                <i class="fa-solid fa-asterisk"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 pt-4">
+          <div class="col-lg-4">
+            <div class="text-center mt-4">
+              <div>
+                <i class="fa-solid fa-phone text-dark h2"></i>
+              </div>
+              <div class="mt-2">
+                <p class="mb-0 font-weight-bold">Call Me</p>
+                <p class="text-muted">+1 360 510 0009</p>
+              </div>
+            </div>
+            <div
+              class="text-center mt-4"
+              style="cursor: pointer"
+              onclick="window.location.assign('mailto:mac@macrichards.com')"
+            >
+              <div>
+                <i class="fa-solid fa-envelope text-dark h2"></i>
+              </div>
+              <div class="mt-2">
+                <p class="mb-0 font-weight-bold">Email Me At</p>
+                <p class="text-muted">mac@macrichards.com</p>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <div>
+                <i class="fa-solid fa-location-dot text-dark h2"></i>
+              </div>
+              <div class="mt-2">
+                <p class="mb-0 font-weight-bold">Location</p>
+                <p class="text-muted">Washington, DC<br />Seattle, WA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="contact_form">
+              <form action="https://formspree.io/f/xgedowqq" method="POST">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group mt-2">
+                      <label for="name" class="font-weight-bold">Name </label>
+                      <input
+                        name="name"
+                        id="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your name..."
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group mt-2">
+                      <label for="email" class="font-weight-bold"
+                        >Email address</label
+                      >
+                      <input
+                        name="email"
+                        id="email"
+                        type="email"
+                        class="form-control"
+                        placeholder="Your email..."
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group mt-2">
+                      <label for="subject" class="font-weight-bold"
+                        >Subject</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        placeholder="Your Subject.."
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group mt-2">
+                      <label for="message" class="font-weight-bold"
+                        >Message</label
+                      >
+                      <textarea
+                        name="message"
+                        rows="4"
+                        class="form-control"
+                        placeholder="Your message..."
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 text-right">
+                    <input type="submit" class="btn btn-custom" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact -->
 
-	<!-- START Honors & Awards -->
-	<section class="section bg-dark" id="Awards">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="text-center mx-auto section-main-title">
-						<h2>Honors & Awards</h2>
-						<div class="main-title-border">
-							<i class="fa-solid fa-asterisk"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-4 pt-4">
-				<div class="col-lg-12">
-					<div class="cv_edu_exp mt-3">
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">Jul. 2024</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Distinguished Service Award</h4>
-										<p class="cv_desc mb-0">Awarded to Order of the Arrow members who have rendered distinguished and outstanding service to the Order on a sectional, regional, or national basis.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">5 quarters</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Dean's List</h4>
-										<p class="cv_desc mb-0">Awarded to University of Washington students who earn a quarter GPA of 3.5 or above.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">Dec. 2018</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Eagle Scout</h4>
-										<p class="cv_desc mb-0">Awarded to Boy Scouts of America scouts who complete all specified requirements and are approved by a board of review.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cv_edu_exp_box mt-4">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="cv_edu_exp_year font-weight-bold text-dark position-relative">Jun. 2018</div>
-									<div class="cb_edu_exp_detail">
-										<h4>Vigil Honor</h4>
-										<p class="cv_desc mb-0">Awarded to Order of the Arrow members who have demonstrated exceptional service, personal effort, unselfish interest, and have made distinguished contributions beyond the immediate responsibilities of their position of office.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END Honors & Awards -->
+    <!-- START Footer -->
+    <section class="bg bg-black">
+      <div class="container">
+        <div class="row pt-4 pb-4">
+          <div class="col-lg-6">
+            <div class="float-left float_none mt-2 mb-2">
+              <p class="copy-rights text-muted mb-0">
+                Copyright &copy; <span id="year"></span> Michael Richards. All
+                Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <!-- Socials -->
+          <div class="col-lg-6">
+            <div class="float-right float_none mt-2 mb-2">
+              <ul
+                class="list-inline social mb-0 d-flex align-items-center justify-content-center"
+              >
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/macrichards/"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/macrichards/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Footer -->
 
-	<!-- START Contact -->
-	<section class="section" id="Contact">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="text-center mx-auto section-main-title">
-						<h2>Get In Touch</h2>
-						<div class="main-title-border">
-							<i class="fa-solid fa-asterisk"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-4 pt-4">
-				<div class="col-lg-4">
-					<div class="text-center mt-4">
-						<div>
-							<i class="fa-solid fa-phone text-dark h2"></i>
-						</div>
-						<div class="mt-2">
-							<p class="mb-0 font-weight-bold">Call Me</p>
-							<p class="text-muted">+1 360 510 0009</p>
-						</div>
-					</div>
-					<div class="text-center mt-4" style="cursor: pointer;" onclick="window.location.assign('mailto:contact@macrichards.com')">
-						<div>
-							<i class="fa-solid fa-envelope text-dark h2"></i>
-						</div>
-						<div class="mt-2">
-							<p class="mb-0 font-weight-bold">Email Me At</p>
-							<p class="text-muted">contact@macrichards.com</p>
-						</div>
-					</div>
-					<div class="text-center mt-4">
-						<div>
-							<i class="fa-solid fa-location-dot text-dark h2"></i>
-						</div>
-						<div class="mt-2">
-							<p class="mb-0 font-weight-bold">Location</p>
-							<p class="text-muted">Washington, DC</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8">
-					<div class="contact_form">
-						<form action="https://formspree.io/f/xgedowqq" method="POST">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="form-group mt-2">
-										<label for="name" class="font-weight-bold">Name</label>
-										<input name="name" id="name" type="text" class="form-control" placeholder="Your name..." required="">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="form-group mt-2">
-										<label for="email" class="font-weight-bold">Email address</label>
-										<input name="email" id="email" type="email" class="form-control" placeholder="Your email..." required>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="form-group mt-2">
-										<label for="subject" class="font-weight-bold">Subject</label>
-										<input type="text" class="form-control" name="subject" placeholder="Your Subject.." required />
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="form-group mt-2">
-										<label for="message" class="font-weight-bold">Message</label>
-										<textarea name="message" rows="4" class="form-control" placeholder="Your message..." required></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12 text-right">
-									<input type="submit" class="btn btn-custom">
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END Contact -->
+    <!-- Back to Top -->
+    <a href="#" class="back_top"> <i class="fa-solid fa-arrow-up"> </i> </a>
 
-	<!-- START Footer -->
-	<section class="bg bg-black">
-		<div class="container">
-			<div class="row pt-4 pb-4">
-				<div class="col-lg-6">
-					<div class="float-left float_none mt-2 mb-2">
-						<p class="copy-rights text-muted mb-0">Copyright &copy; <span id="year"></span> Michael Richards. All Rights Reserved.</p>
-					</div>
-				</div>
-					<!-- Socials -->
-				<div class="col-lg-6">
-					<div class="float-right float_none mt-2 mb-2">
-						<ul class="list-inline social mb-0 d-flex align-items-center justify-content-center">
-							<li class="list-inline-item"><a href="https://www.linkedin.com/in/macrichards/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-							<li class="list-inline-item"><a href="https://www.instagram.com/macrichards/"><i class="fa-brands fa-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END Footer -->
-
-	<!-- Back to Top -->
-	<a href="#" class="back_top"> <i class="fa-solid fa-arrow-up"> </i> </a>
-
-	<!-- JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="assets/js/scrollspy.min.js"></script>
-	<!--Custom JS-->
-	<script src="assets/js/custom.js"></script>
-</body>
-
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/scrollspy.min.js"></script>
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>
