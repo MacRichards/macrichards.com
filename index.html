@@ -1,715 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Michael Richards - Personal Resume</title>
-    <meta name="description" content="Professional CV for Mr. Richards" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="MacRichards" />
-    <link rel="shortcut icon" href="assets/images/favicon.jpg" />
-    <!-- Vender CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/9c6ad30628.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
 
-  <body>
-    <!-- START Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand logo" href="index.html">
-          <img src="assets/images/favicon.jpg" class="img-fluid" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michael Richards - Personal Resume</title>
+  <meta name="description" content="Professional CV for Mr. Richards" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="MacRichards" />
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" />
+  <!-- Vender CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9c6ad30628.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active" label="Home">
-              <a href="#Home" class="nav-link">Home</a>
+<body>
+  <!-- START Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/favicon.jpg" class="img-fluid" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" label="About">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="nav-item" label="Education">
+            <a href="#Education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item" label="Experience">
+            <a href="#Experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item" label="Publications">
+            <a href="#Publications" class="nav-link">Publications</a>
+          </li>
+          <li class="nav-item" label="Contact">
+            <a href="#Contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END Navbar -->
+
+  <!-- START About -->
+  <section class="section" id="About">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 justify-content-center">
+          <img src="assets/images/about.jpg" class="img-fluid mx-auto d-block mb-4" />
+          <div class="text-center">
+            <h3>Michael Richards</h3>
+            <p class="text-muted">Juris Doctor Candidate</p>
+            <p class="text-muted">
+              <a href="https://www.wcl.american.edu/" target="_blank" class="link">Washington College of Law</a>
+            </p>
+          </div>
+          <ul class="social list-unstyled text-center">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/macrichards/"><i class="fa-brands fa-linkedin-in"
+                  aria-hidden="true"></i></a>
             </li>
-            <li class="nav-item" label="About">
-              <a href="#About" class="nav-link">About</a>
-            </li>
-            <li class="nav-item" label="Education">
-              <a href="#Education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item" label="Experience">
-              <a href="#Experience" class="nav-link">Experience</a>
-            </li>
-            <li class="nav-item" label="Publications">
-              <a href="#Publications" class="nav-link">Publications</a>
-            </li>
-            <li class="nav-item" label="Contact">
-              <a href="#Contact" class="nav-link">Contact</a>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/macrichards/"><i class="fa-brands fa-instagram"
+                  aria-hidden="true"></i></a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!-- END Navbar -->
-
-    <!-- START Home -->
-    <section class="home-bg section" id="Home">
-      <div class="container">
-        <div class="row justify-content-left">
-          <div class="col-lg-12">
-            <div class="text-center">
-              <h1 class="header_title mb-0 mt-3">Michael "Mac" Richards</h1>
-              <h2 class="header_subtitle">JD Candidate</h2>
-              <!-- Socials -->
-              <ul class="social list-unstyled text-center pt-4">
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/macrichards/"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/macrichards/"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
+        <div class="col-lg-8">
+          <div class="mx-auto section-main-title text-center">
+            <h2>About Me</h2>
+            <div class="main-title-border">
+              <i class="fa-solid fa-asterisk"></i>
+            </div>
+          </div>
+          <p class="mx-auto">
+            I am a law student at American University Washington College of Law, driven by a commitment
+            to justice, accountability, and human rights. My academic and professional work centers on
+            international criminal law, international humanitarian law, and domestic criminal law, with
+            the goal of pursuing a career in public service as a prosecutor and advocate.
+          </p>
+          <p class="mx-auto">
+            My legal experience spans international and domestic practice. I am currently an extern with
+            the Special Prosecution Division of the Montgomery County State's Attorney's Office, where I
+            work on serious felony matters, including trial preparation, evidence analysis, and
+            prosecutorial strategy. This summer, I will serve as a Rule 9 Legal Intern with the
+            Snohomish County Prosecutor's Office, further developing practical experience in criminal
+            prosecution.
+          </p>
+          <p class="mx-auto">
+            My research examines the intersection of law, armed conflict, and corporate responsibility.
+            I have published on corporate accountability for war crimes in the Democratic Republic of
+            the Congo in the Human Rights Brief and contributed to the Asser Institute's
+            International Crimes Database. This work reflects my commitment to ensuring that both
+            individuals and institutions are held accountable for violations of international law.
+          </p>
+          <p class="mx-auto">
+            In addition to research, I have gained practical experience in peacebuilding and
+            international legal processes. With the Public International Law & Policy Group (PILPG), I
+            supported peace negotiations through legal research and drafting memoranda, gaining insight
+            into how law operates in conflict resolution and post-conflict transitions. I also studied
+            international criminal law and counterterrorism at the Asser Institute in The Hague,
+            deepening my understanding of global justice in practice.
+          </p>
+          <p class="mx-auto">
+            Before law school, I worked in information technology as a project manager and IT assistant,
+            leading web development initiatives and supporting infrastructure projects involving
+            wireless networking and A/V systems. This technical background strengthened my ability to
+            manage complex projects, collaborate across disciplines, and adapt quickly in high-pressure
+            environments.
+          </p>
+          <p class="mx-auto">
+            Whether through courtroom advocacy, public service, or legal scholarship, I seek to promote
+            accountability and uphold the rule of law at both the domestic and international levels.
+          </p>
+          <h3 class="mx-auto section-sub-title">Interests</h3>
+          <div class="row mt-3">
+            <div class="col-lg-6">
+              <div class="skill-item mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-hands-bound"></i>
+                <p>International Criminal law</p>
+              </div>
+              <div class="skill-item mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-people-group"></i>
+                <p>Human Rights Law in Armed Conflict</p>
+              </div>
+              <div class="skill-item mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-landmark"></i>
+                <p>Corporate Responsibility & Business and Human Rights</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="skill-item mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-person-rifle"></i>
+                <p>International Humanitarian Law</p>
+              </div>
+              <div class="skill-item mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-building-un"></i>
+                <p>Public International Law & International Institutions</p>
+              </div>
+              <div class="skill-item mb-3 d-flex align-items-center">
+                <i class="fa-solid fa-handcuffs"></i>
+                <p>Comparative Criminal Law and Prosecution</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END HOME -->
-
-    <!-- START About -->
-    <section class="section" id="About">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="text-center mx-auto col-lg-10">
-              <h2>About Me</h2>
-              <div class="main-title-border">
-                <i class="fa-solid fa-asterisk"></i>
-              </div>
-              <p class="text-muted mx-auto mt-4">
-                Mac Richards is a law student at American University Washington
-                College of Law, focusing on international criminal law and
-                technology law. He has previously worked with the War Crimes
-                Research Office, the Human Rights Brief, and Scouting America,
-                and will be studying international counterterrorism law at the
-                Asser Institute in The Hague.
-              </p>
-              <p class="text-muted mx-auto mt-4">
-                His research centers on accountability for war crimes and human
-                rights violations under international law, with an emphasis on
-                corporate responsibility in conflict settings. His work has
-                explored issues including atrocities committed during the
-                Russian invasion of Ukraine, international crimes in the
-                Democratic Republic of the Congo, and the intersection of
-                business and international criminal liability.
-              </p>
-              <p class="text-muted mx-auto mt-4">
-                In addition to his academic work, he has contributed to legal
-                blogs and journals, served as a blog writer for the
-                International Criminal Law blog, and will work on post-conflict
-                legal development initiatives through the Lawyering Peace
-                Program. He brings over a decade of national leadership
-                experience in youth development and public service through
-                Scouting America, and has a technical background in IT
-                infrastructure and web systems integration.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <img
-              src="assets/images/about-2.jpg"
-              alt=""
-              class="img-fluid mx-auto d-block"
-              style="max-width: 400px"
-            />
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="skill-custom text-center">
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">Legal Research</p>
-              </div>
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">
-                  Legal Writing & Analysis
-                </p>
-              </div>
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">Human Rights Advocacy</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="skill-custom text-center">
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">Policy Analysis</p>
-              </div>
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">
-                  Public Speaking & Communication
-                </p>
-              </div>
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">Project Management</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="skill-custom text-center">
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">
-                  IT & Infrastructure Support
-                </p>
-              </div>
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">
-                  Cross-Cultural Competence
-                </p>
-              </div>
-              <div class="clearfix">
-                <p class="text-dark font-weight-bold">
-                  Collaborative Leadership
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="text-center">
-              <a class="btn-custom" href="Michael_Richards_Resume.pdf"
-                >Resume</a
-              >
-            </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="text-center">
+            <a class="btn-custom" href="Michael_Richards_Resume.pdf">Resume</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END About -->
+    </div>
+  </section>
+  <!-- END About -->
 
-    <!-- START Education -->
-    <section class="section bg-dark" id="Education">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-              <h2>My Education</h2>
-              <div class="main-title-border">
-                <i class="fa-solid fa-asterisk"></i>
-              </div>
+  <!-- START Education -->
+  <section class="section bg-dark" id="Education">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="mx-auto section-main-title text-center">
+            <h2>My Education</h2>
+            <div class="main-title-border">
+              <i class="fa-solid fa-asterisk"></i>
             </div>
           </div>
         </div>
-        <div class="row mt-4 pt-4">
-          <div class="col-lg-12">
-            <div class="cv_edu_exp mt-3">
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div
-                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
-                    >
-                      2024 - 2027
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4>Juris Doctor</h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>American University Washington College of Law</i>
-                      </div>
-                      <p class="cv_desc mb-0">
-                        <b>Journal:</b> Business Law Review,
-                        <i>Junior Staffer</i><br />
-                        <b>Activities</b>: Human Rights Brief,
-                        <i>Senior Columns Editor</i>
-                        | War Crimes Research Office,
-                        <i>Blog Writer</i> | Lawyering Peace Program<br /><b
-                          >Study Abroad</b
-                        >: T.M.C. Asser Institute, The Hague, NL, June 2025
-                      </p>
-                    </div>
-                  </div>
+        <div class="col-lg-8">
+          <div class="edu_exp_list">
+            <div class="edu_exp_list_item">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Juris Doctor</h4>
+                  <i class="font-weight-bold">American University Washington College of Law</i>
+                  <p class="cv_desc text-muted mb-0">
+                    2024 &ndash; 2027
+                  </p>
+                  <p class="cv_desc mb-0">
+                    <b>Activities</b>: Human Rights Brief,
+                    <i>Senior Columns Editor</i>
+                    | War Crimes Research Office,
+                    <i>Blog Writer</i>
+                  </p>
+                  <p class="cv_desc mb-0"><b>Study Abroad</b>: T.M.C.
+                    Asser Institute, The Hague, NL, June 2025
+                  </p>
                 </div>
               </div>
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div
-                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
-                    >
-                      2020 - 2023
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4>Bachelor's in Political Science</h4>
-                      <p class="cv_desc mb-0">
-                        Minor in Law, Societies, and Justice
-                      </p>
-                      <div class="font-weight-bold text-dark">
-                        <i>University of Washington</i>
-                      </div>
-                      <p class="cv_desc mb-0">
-                        <b>overall GPA</b>: 3.61<br />
-                        <b>Honors</b>: Dean's List<br />
-                        <b>Activities</b>: Phi Alpha Delta Pre-Law Fraternity,
-                        <i>Social Committee Member</i>
-                      </p>
-                    </div>
-                  </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Bachelors of Arts in Political Science</h4>
+                  <i class="font-weight-bold">University of Washington</i>
+                  <p class="cv_desc text-muted mb-0">
+                    2020 &ndash; 2023
+                  </p>
+                  <p class="cv_desc mb-0">
+                    Minor in Law, Societies, and Justice
+                  </p>
+                  <p class="cv_desc mb-0">
+                    <b>Honors</b>: Dean's List
+                  </p>
+                  <p class="cv_desc mb-0">
+                    <b>Activities</b>: Phi Alpha Delta Pre-Law Fraternity,
+                    <i>Social Committee Member</i>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END Education -->
+    </div>
+  </section>
+  <!-- END Education -->
 
-    <!-- START Experience -->
-    <section class="section" id="Experience">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-              <h2>My Experiences</h2>
-              <div class="main-title-border">
-                <i class="fa-solid fa-asterisk"></i>
-              </div>
+  <!-- START Experience -->
+  <section class="section" id="Experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="mx-auto section-main-title text-center">
+            <h2>My Experiences</h2>
+            <div class="main-title-border">
+              <i class="fa-solid fa-asterisk"></i>
             </div>
           </div>
         </div>
-        <div class="row mt-4 pt-4">
-          <div class="col-lg-12">
-            <div class="cv_edu_exp mt-3">
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div
-                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
-                    >
-                      Oct. 2023 - Jul. 2024
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4>Legal Assistant</h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>Suttell & Hammer</i>
-                      </div>
-                      <ul class="cv_desc mb-0">
-                        <li>
-                          Prepared motions to amend, judgment renewals, and
-                          judgment domestications.
-                        </li>
-                        <li>
-                          Conducted legal research and utilized JST Collect Max
-                          for case management.
-                        </li>
-                        <li>
-                          Entered judgment data and e-filed motions with the
-                          court.
-                        </li>
-                        <li>
-                          Coordinated with courts to maintain a hearing
-                          calendar.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+        <div class="col-lg-8">
+          <div class="edu_exp_list">
+            <div class="edu_exp_list_item">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Legal Extern</h4>
+                  <i class="font-weight-bold">Montgomery County State's Attorney's Office</i>
+                  <p class="cv_desc text-muted mb-0">January 2026 &ndash; Present</p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Conducted legal research and drafted memoranda on
+                      evidentiary and procedural issues for homicide and
+                      violent felony prosecutions.
+                    </li>
+                    <li>
+                      Assisted prosecutors in preparing for trial by
+                      organizing discovery materials, witness lists, and
+                      exhibits.
+                    </li>
+                    <li>
+                      Reviewed police reports, forensic evidence, and
+                      witness statements to support case preparation.
+                    </li>
+                    <li>
+                      Observed and analyzed major felony trials, including
+                      jury selection, opening statements, and
+                      cross-examinations.
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div
-                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
-                    >
-                      Oct. 2021 - Mar. 2023
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4>Learning Spaces IT Student Assistant</h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>University of Washington</i>
-                      </div>
-                      <ul class="cv_desc mb-0">
-                        <li>
-                          Responded to eight queries a day on the phone, via
-                          email, or through an IT ticketing system.
-                        </li>
-                        <li>
-                          Set up and maintained video matrix servers and other
-                          IT infrastructure.
-                        </li>
-                        <li>
-                          Resolved network issues alongside faculty and staff.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Legal Research Associate</h4>
+                  <i class="font-weight-bold">Lawyering Peace Program</i>
+                  <p class="cv_desc text-muted mb-0">August 2025 &ndash; December 2025</p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Drafted client-ready memorandum proposing language and strategies for designing security guarantees within a peace agreement for Ukraine for the Public International Law and Policy Group (PILPG).
+                    </li>
+                    <li>
+                      Enhanced negotiation and advocacy skills through regular simulation exercises modeled on international peace negotiations.
+                    </li>
+                    <li>
+                      Presented research findings to colleagues and supervisors through a formal multi-media presentation.
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div
-                      class="cv_edu_exp_year font-weight-bold text-dark position-relative"
-                    >
-                      Jan. 2019 - Dec. 2024
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4>National Key Volunteer</h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>Scouting America</i>
-                      </div>
-                      <ul class="cv_desc mb-0">
-                        <li>
-                          Oversaw, planned, led, and developed high-profile
-                          projects as directed by the National Committee.
-                        </li>
-                        <li>
-                          Followed and maintained operational methods,
-                          accounting procedures, and tracked information.
-                        </li>
-                        <li>
-                          Delegated daily tasks to over six volunteers to
-                          provide development opportunities.
-                        </li>
-                        <li>
-                          Supervised site investigations, reported issues, and
-                          escalated those that required further assistance.
-                        </li>
-                      </ul>
-                      <p>
-                        <b>Awards</b>:
-                        <a
-                          href="https://oa-scouting.org/distinguished-service-award-past-recipients-2000-present"
-                          target="_blank"
-                          >Distinguished Service Award</a
-                        >
-                      </p>
-                    </div>
-                  </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Case Researcher</h4>
+                  <i class="font-weight-bold">T.M.C. Asser Institute</i>
+                  <p class="cv_desc text-muted mb-0">June 2025 &ndash; Present</p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Researched and summarized cases involving war crimes,
+                      crimes against humanity, and genocide adjudicated by
+                      domestic and international courts, for publication on
+                      the International Crimes Database.
+                    </li>
+                    <li>
+                      Conducted legal research on emerging jurisprudence in
+                      international humanitarian law, counterterrorism, and
+                      international human rights law.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Research Assistant, Professor Rebecca Hamilton</h4>
+                  <i class="font-weight-bold">American University Washington College of Law</i>
+                  <p class="cv_desc text-muted mb-0">June 2025 &ndash; August 2025</p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Conducted legal research into issues surrounding
+                      international humanitarian law and domestic
+                      immigration law.
+                    </li>
+                    <li>
+                      Drafted summaries and memoranda with a team of student
+                      researchers for academic syllabus supplements.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Legal Assistant</h4>
+                  <i class="font-weight-bold">Suttell & Hammer</i>
+                  <p class="cv_desc text-muted mb-0">October 2023 &ndash; July 2024</p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Drafted and prepared motions to amend, judgment
+                      renewals, and judgment domestications in support of
+                      high-volume creditors' rights litigation.
+                    </li>
+                    <li>
+                      Entered judgment data with accuracy and filed motions
+                      electronically in compliance with court rules and
+                      procedural deadlines.
+                    </li>
+                    <li>
+                      Liaised with court clerks to manage hearing schedules,
+                      track deadlines, and ensure timely case progression.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Learning Spaces IT Student Assistant</h4>
+                  <i class="font-weight-bold">University of Washington</i>
+                  <p class="cv_desc text-muted mb-0">
+                    October 2021 &ndash; March 2023
+                  </p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Responded to queries on phone, via email, or through
+                      IT ticketing system.
+                    </li>
+                    <li>
+                      Set up and maintained video matrix servers and other
+                      IT infrastructure.
+                    </li>
+                    <li>
+                      Worked with faculty and staff to resolve network
+                      issues.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="edu_exp_list_item mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h4>National Key Volunteer</h4>
+                  <i class="font-weight-bold">Scouting America</i>
+
+                  <p class="cv_desc text-muted mb-0">
+                    January 2019 &ndash; December 2024
+                  </p>
+                  <ul class="cv_desc mb-0">
+                    <li>
+                      Led the planning and execution of national-level
+                      technology projects under the direction of the
+                      National Committee, supporting strategic initiatives
+                      and digital outreach.
+                    </li>
+                    <li>
+                      Maintained internal documentation and accounting
+                      protocols to ensure operational consistency, accurate
+                      information tracking, and procedural compliance.
+                    </li>
+                    <li>
+                      Supervised and mentored a team of 6+ volunteers,
+                      delegating responsibilities to foster skill
+                      development and ensure timely completion of technology
+                      initiatives.
+                    </li>
+                    <li>
+                      Monitored and assessed digital platforms; reported
+                      technical issues and escalated unresolved cases to
+                      national leadership to ensure continuity of services.
+                    </li>
+                    <li>
+                      Received the
+                      <a href="https://oa-scouting.org/distinguished-service-award-past-recipients-2000-present#:~:text=Michael%20%22Mac%22%20Richards"
+                        target="_blank" class="link">Distinguished Service Award</a>
+                      (2024), the highest national honor for service to
+                      Scouting America's Order of the Arrow, recognizing
+                      exceptional leadership and commitment.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END Experience -->
+    </div>
+  </section>
+  <!-- END Experience -->
 
-    <!-- START Publications -->
-    <section class="section bg-dark" id="Publications">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-              <h2>Publications</h2>
-              <div class="main-title-border">
-                <i class="fa-solid fa-asterisk"></i>
-              </div>
+  <!-- START Publications -->
+  <section class="section bg-dark" id="Publications">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="mx-auto section-main-title text-center">
+            <h2>Publications</h2>
+            <div class="main-title-border">
+              <i class="fa-solid fa-asterisk"></i>
             </div>
           </div>
         </div>
-        <div class="row mt-4 pt-4">
-          <div class="col-lg-12">
-            <div class="cv_edu_exp mt-3">
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="cv_edu_exp_year">
-                      <span class="pub_tag pub_article"> Article </span>
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4 class="pub_title_article">
-                        Business Accountability in Business Dealings with War
-                        Criminals
-                      </h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>Human Rights Brief</i>
-                      </div>
-                      <p class="cv_desc mb-0">
-                        <span class="pub_smcp">Vol. 28 No. 2</span>
-                        <i class="pub_seperator fa-solid fa-diamond"></i>
-                        Forthcoming
-                        <i class="pub_seperator fa-solid fa-diamond"></i>
-                        This article examines international legal mechanisms for
-                        holding corporations accountable when doing business
-                        with sanctioned war criminals. It analyzes the
-                        Dodd-Frank Act, the EU Conflict Minerals Regulation, and
-                        the Rome Statute, and proposes reforms to address legal
-                        gaps.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="cv_edu_exp_year">
-                      <span class="pub_tag pub_blog"> Blog </span>
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4
-                        class="pub_title_blog"
-                        onclick="window.open('https://propertylawtoday.org/posts/2025/richards-internet-takings/')"
-                      >
-                        Taking the Internet by Law
-                      </h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>Property Law Today</i>
-                      </div>
-                      <p class="cv_desc mb-0">
-                        Apr. 20, 2025
-                        <i class="pub_seperator fa-solid fa-diamond"></i>
-                        The article argues that Comcast’s monopoly over internet
-                        infrastructure in many areas has led to slow service and
-                        predatory pricing, harming vulnerable communities. It
-                        proposes that local governments could use eminent domain
-                        under the Fifth Amendment to seize Comcast’s
-                        infrastructure and open it to competition, similar to
-                        the
-                        <i>Kelo v. City of New London</i>
-                        case. Given the internet's essential role in modern
-                        life, such a move could be justified as serving the
-                        public interest.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cv_edu_exp_box mt-4">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="cv_edu_exp_year">
-                      <span class="pub_tag pub_blog"> Blog </span>
-                    </div>
-                    <div class="cb_edu_exp_detail">
-                      <h4
-                        class="pub_title_blog"
-                        onclick="window.open('https://wcrointlcrimlawupdates.wordpress.com/author/mr6982a/')"
-                      >
-                        International Criminal Law Updates
-                      </h4>
-                      <div class="font-weight-bold text-dark">
-                        <i>
-                          War Crimes Research Office of American University
-                          Washington College of Law
-                        </i>
-                      </div>
-                      <p class="cv_desc mb-0">
-                        Feb. &ndash; Apr. 2025
-                        <i class="pub_seperator fa-solid fa-diamond"></i>
-                        Reported on developments on the International Criminal
-                        Court's investigation into the Situation in Ukraine and
-                        Preliminary Investigation into the Republic of Belarus.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="pub_tag pub_article d-flex align-items-center justify-content-center">
+              <span>Article</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--END Publications -->
-
-    <!-- START Contact -->
-    <section class="section" id="Contact">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-              <h2>Get In Touch</h2>
-              <div class="main-title-border">
-                <i class="fa-solid fa-asterisk"></i>
+            <div class="pub_body">
+              <a class="pub_title_article h5" href="#">
+                Business Accountability in Business Dealings with War
+                Criminals
+              </a>
+              <div class="font-weight-bold">
+                <i>Human Rights Brief</i>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4 pt-4">
-          <div class="col-lg-4">
-            <div class="text-center mt-4">
-              <div>
-                <i class="fa-solid fa-phone text-dark h2"></i>
-              </div>
-              <div class="mt-2">
-                <p class="mb-0 font-weight-bold">Call Me</p>
-                <p class="text-muted">+1 360 510 0009</p>
-              </div>
-            </div>
-            <div
-              class="text-center mt-4"
-              style="cursor: pointer"
-              onclick="window.location.assign('mailto:mac@macrichards.com')"
-            >
-              <div>
-                <i class="fa-solid fa-envelope text-dark h2"></i>
-              </div>
-              <div class="mt-2">
-                <p class="mb-0 font-weight-bold">Email Me At</p>
-                <p class="text-muted">mac@macrichards.com</p>
-              </div>
-            </div>
-            <div class="text-center mt-4">
-              <div>
-                <i class="fa-solid fa-location-dot text-dark h2"></i>
-              </div>
-              <div class="mt-2">
-                <p class="mb-0 font-weight-bold">Location</p>
-                <p class="text-muted">Washington, DC<br />Seattle, WA</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="contact_form">
-              <form action="https://formspree.io/f/xgedowqq" method="POST">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group mt-2">
-                      <label for="name" class="font-weight-bold">Name </label>
-                      <input
-                        name="name"
-                        id="name"
-                        type="text"
-                        class="form-control"
-                        placeholder="Your name..."
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group mt-2">
-                      <label for="email" class="font-weight-bold"
-                        >Email address</label
-                      >
-                      <input
-                        name="email"
-                        id="email"
-                        type="email"
-                        class="form-control"
-                        placeholder="Your email..."
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group mt-2">
-                      <label for="subject" class="font-weight-bold"
-                        >Subject</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="subject"
-                        placeholder="Your Subject.."
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group mt-2">
-                      <label for="message" class="font-weight-bold"
-                        >Message</label
-                      >
-                      <textarea
-                        name="message"
-                        rows="4"
-                        class="form-control"
-                        placeholder="Your message..."
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 text-right">
-                    <input type="submit" class="btn btn-custom" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Contact -->
-
-    <!-- START Footer -->
-    <section class="bg bg-black">
-      <div class="container">
-        <div class="row pt-4 pb-4">
-          <div class="col-lg-6">
-            <div class="float-left float_none mt-2 mb-2">
-              <p class="copy-rights text-muted mb-0">
-                Copyright &copy; <span id="year"></span> Michael Richards. All
-                Rights Reserved.
+              <p class="cv_desc mb-0">
+                <span class="pub_smcp">Vol. 29 No. 1</span>
+                <i class="pub_separator fa-solid fa-diamond"></i>
+                Forthcoming
+                <i class="pub_separator fa-solid fa-diamond"></i>
+                This article examines international legal mechanisms for
+                holding corporations accountable when doing business
+                with sanctioned war criminals. It analyzes the
+                Dodd-Frank Act, the EU Conflict Minerals Regulation, and
+                the Rome Statute, and proposes reforms to address legal
+                gaps.
               </p>
             </div>
           </div>
-          <!-- Socials -->
-          <div class="col-lg-6">
-            <div class="float-right float_none mt-2 mb-2">
-              <ul
-                class="list-inline social mb-0 d-flex align-items-center justify-content-center"
-              >
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/macrichards/"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/macrichards/"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
+          <div class="card shadow-sm mt-4">
+            <div class="pub_tag pub_blog d-flex align-items-center justify-content-center">
+              <span>Blog</span>
+            </div>
+            <div class="pub_body">
+              <a href="https://aublr.org/2025/09/a-wake-up-call-for-tech-companies-operating-abroad-doe-i-v-cisco-systems-inc/"
+                target="_blank" class="pub_title_blog h5">A Wake-Up Call for Tech Companies Operating Abroad:
+                <i>Doe I v. Cisco Systems, Inc.</i></a>
+              <div class="font-weight-bold">
+                <i>The BLR Buzz Blog</i>
+              </div>
+              <p class="cv_desc mb-0">
+                September 30, 2025
+                <i class="pub_separator fa-solid fa-diamond"></i>
+                The Ninth Circuit's
+                <i>Doe I v. Cisco Systems, Inc.</i> revives the Alien
+                Tort Statute for claims against U.S. tech firms.
+                Plaintiffs allege Cisco designed, customized, and
+                supported China's “Golden Shield” from California,
+                knowing it would facilitate persecution of Falun Gong
+                practitioners. Allowing aiding-and-abetting claims
+                grounded in domestic design and support distinguishes
+                cases rejecting mere corporate presence. The ruling
+                amplifies litigation risk for companies tailoring
+                products for repressive uses and underscores robust
+                human rights due diligence aligned with UN Guiding
+                Principles. It also reflects a broader trend toward
+                accountability through EU due diligence and expanded
+                U.S. sanctions and export controls.
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-sm mt-4">
+            <div class="pub_tag pub_blog d-flex align-items-center justify-content-center">
+              <span>Blog</span>
+            </div>
+            <div class="pub_body">
+              <a href="https://propertylawtoday.org/posts/2025/richards-internet-takings/" target="_blank"
+                class="pub_title_blog h5">Taking the Internet by Law</a>
+              <div class="font-weight-bold">
+                <i>Property Law Today</i>
+              </div>
+              <p class="cv_desc mb-0">
+                April 20, 2025
+                <i class="pub_separator fa-solid fa-diamond"></i>
+                This blog post argues that states can address
+                monopoly-driven slow speeds, predatory pricing, and
+                limited access to essential internet services by
+                exercising eminent domain over Comcast's physical
+                network infrastructure and opening it to competitive
+                providers. Drawing on <i>Kelo v. City of New London</i>,
+                the blog post contends that a well-designed,
+                community-wide plan satisfies the Fifth Amendment's
+                “public use” requirement and just compensation standard.
+                Given the internet's central role in work, education,
+                and civic participation, public control of
+                infrastructure advances equity and efficiency while
+                remaining within the powers of democratically
+                accountable government.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mt-4">
+            <div class="pub_tag pub_blog d-flex align-items-center justify-content-center">
+              <span>Blog</span>
+            </div>
+            <div class="pub_body">
+              <a class="pub_title_blog h5" href="https://wcrointlcrimlawupdates.wordpress.com/author/mr6982a/"
+                target="_blank">
+                International Criminal Law Updates
+              </a>
+              <div class="font-weight-bold">
+                <i>
+                  War Crimes Research Office of American University
+                  Washington College of Law
+                </i>
+              </div>
+              <p class="cv_desc mb-0">
+                February &ndash; April 2025
+                <i class="pub_separator fa-solid fa-diamond"></i>
+                Reported on developments on the International Criminal
+                Court's investigation into the Situation in Ukraine and
+                Preliminary Investigation into the Republic of Belarus.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END Footer -->
+    </div>
+  </section>
+  <!--END Publications -->
 
-    <!-- Back to Top -->
-    <a href="#" class="back_top"> <i class="fa-solid fa-arrow-up"> </i> </a>
+  <!-- START Contact -->
+  <section class="section" id="Contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="text-center mx-auto section-main-title">
+            <h2>Get In Touch</h2>
+            <div class="main-title-border">
+              <i class="fa-solid fa-asterisk"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pt-4">
+        <div class="col-lg-4">
+          <div class="text-center mt-4" style="cursor: pointer"
+            onclick="window.location.assign('mailto:mac@macrichards.com')">
+            <div>
+              <i class="fa-solid fa-envelope  h2"></i>
+            </div>
+            <div class="mt-2">
+              <p class="mb-0 font-weight-bold">Email Me At</p>
+              <p class="text-muted">mac@macrichards.com</p>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <div>
+              <i class="fa-solid fa-location-dot  h2"></i>
+            </div>
+            <div class="mt-2">
+              <p class="mb-0 font-weight-bold">Location</p>
+              <p class="text-muted">Seattle, WA<br />Washington, DC</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="contact_form">
+            <form action="https://formspree.io/f/xgedowqq" method="POST">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group mt-2">
+                    <label for="name" class="font-weight-bold">Name </label>
+                    <input name="name" id="name" type="text" class="form-control" placeholder="Your name..."
+                      required="" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group mt-2">
+                    <label for="email" class="font-weight-bold">Email address</label>
+                    <input name="email" id="email" type="email" class="form-control" placeholder="Your email..."
+                      required />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mt-2">
+                    <label for="subject" class="font-weight-bold">Subject</label>
+                    <input type="text" class="form-control" name="subject" placeholder="Your Subject.." required />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mt-2">
+                    <label for="message" class="font-weight-bold">Message</label>
+                    <textarea name="message" rows="4" class="form-control" placeholder="Your message..."
+                      required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-right">
+                  <input type="submit" class="btn btn-custom" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Contact -->
 
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/scrollspy.min.js"></script>
-    <!--Custom JS-->
-    <script src="assets/js/custom.js"></script>
-  </body>
+  <!-- START Footer -->
+  <section class="bg bg-footer">
+    <div class="container">
+      <div class="row pt-4 pb-4">
+        <div class="col-8">
+          <div class="float-left">
+            <p class="text-muted mb-0">
+              Copyright &copy; <span id="year"></span> Michael Richards. All
+              Rights Reserved.
+            </p>
+          </div>
+        </div>
+        <!-- Socials -->
+        <div class="col-4">
+          <div class="float-right">
+            <ul class="list-inline social mb-0 d-flex align-items-center text-center">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/macrichards/"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/macrichards/"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Footer -->
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/scrollspy.min.js"></script>
+  <!--Custom JS-->
+  <script src="assets/js/custom.js"></script>
+</body>
+
 </html>
