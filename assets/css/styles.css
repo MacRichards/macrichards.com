@@ -87,12 +87,13 @@ button:focus {
 .btn-custom:active,
 .btn-custom.active,
 .btn-custom.focus,
-.btn-custom:active,
-.btn-custom:focus,
-.btn-custom:hover,
+.btn-exp:active,
+.btn-exp:focus,
+.btn-exp:hover,
 .open > .dropdown-toggle.btn-custom {
     background-color: var(--off-white);
     color: var(--navy);
+    cursor: pointer;
 }
 
 .link {
@@ -280,6 +281,22 @@ button:focus {
 .cv_desc {
     line-height: 26px;
     font-size: 15px;
+}
+
+.btn-exp {
+    padding: 8px 13px;
+    background-color: var(--navy);
+    border: 1px solid var(--navy);
+    color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.5s;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+.btn-exp i {
+    font-size: 10px;
 }
 
 /*===========================
